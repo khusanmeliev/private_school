@@ -11,6 +11,6 @@ This project is for the small private school.
 
 ## To use this project
 
-### Install packages using `npm install` command
+Install packages using `npm install` command
 
-### Start project using `npm start` command
+Start project using `npm start` command
