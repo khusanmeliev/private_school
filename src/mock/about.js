@@ -1,7 +1,8 @@
-import { BiTrendingUp, BiShoppingBag,BiBus } from "react-icons/bi";
-import { FcReading,FcBusinessman } from "react-icons/fc";
-import {FaMapMarkerAlt} from 'react-icons/fa'
-export const boxes = [
+import { BiTrendingUp, BiShoppingBag, BiBus } from "react-icons/bi";
+import { FcReading, FcBusinessman } from "react-icons/fc";
+import { FaMapMarkerAlt } from "react-icons/fa";
+
+export const about = [
   {
     id: 1,
     icon: <BiTrendingUp />,

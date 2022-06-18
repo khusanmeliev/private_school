@@ -11,10 +11,9 @@ import {
 export const directors = [
   {
     id: 1,
-    img: "	https://profimaktab.uz/wp-content/uploads/2021/08/274A1614-scaled.jpg",
+    img: "https://profimaktab.uz/wp-content/uploads/2021/08/274A1614-scaled.jpg",
     settings: <GrUserSettings />,
     name: "Hurshid Shavkatbekovich",
-    branch: "Mirobod filiali direktori",
     email_icon: <MdEmail />,
     email: "direktor@profiedu.uz",
     phone_icon: <FaPhone />,
@@ -27,10 +26,9 @@ export const directors = [
   },
   {
     id: 2,
-    img: "",
+    img: "https://profimaktab.uz/wp-content/uploads/2021/08/274A1614-scaled.jpg",
     settings: <GrUserSettings />,
     name: "Zemfira Talgatovna",
-    branch: "Olmazor filiali direktori",
     email_icon: <MdEmail />,
     email: "zemfiratalgatovna@profiedu.uz",
     phone_icon: <FaPhone />,
