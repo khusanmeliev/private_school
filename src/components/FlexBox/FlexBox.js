@@ -1,20 +1,14 @@
 import styled from "styled-components";
 
-export const FlexBox = styled.div`
-  width: ${({ width }) => (width ? width : "100%")};
-  height: ${({ height }) => (height ? height : "100%")};
+const Flexbox = styled.div`
   display: flex;
-  flex-direction: ${({ flexDirection }) => flexDirection};
+  flex-direction: ${({ flexDirection }) => flexDirection || "column"};
   justify-content: ${({ justifyContent }) =>
     justifyContent ? justifyContent : "center"};
-  align-items: ${({ alignItems }) => (alignItems ? alignItems : "center")};
-  /* background-color: ${({ bgColor }) => (bgColor ? bgColor : "red")}; */
-  border-radius: ${({ borderRadius }) => borderRadius};
-  position: ${({ position }) => position};
-  background: ${({ background }) => background};
+  align-items: ${({ alignItems }) => alignItems || "center"};
   gap: ${({ gap }) => gap};
-  font-size: ${({ fontSize }) => fontSize};
-  border: ${({ border }) => border};
   flex-wrap: ${({ flexWrap }) => flexWrap};
-  margin-top: ${({ marginTop }) => marginTop};
+  width: ${({ width }) => width};
+  height: ${({ height }) => height};
 `;
+export default Flexbox;
