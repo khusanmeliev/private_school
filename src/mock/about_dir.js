@@ -1,4 +1,5 @@
 import { MdEmail } from "react-icons/md";
+import { GrUserSettings } from "react-icons/gr";
 import {
   FaPhone,
   FaMapMarkerAlt,
@@ -11,7 +12,7 @@ export const directors = [
   {
     id: 1,
     img: "	https://profimaktab.uz/wp-content/uploads/2021/08/274A1614-scaled.jpg",
-    settings: "",
+    settings: <GrUserSettings />,
     name: "Hurshid Shavkatbekovich",
     branch: "Mirobod filiali direktori",
     email_icon: <MdEmail />,
@@ -19,8 +20,7 @@ export const directors = [
     phone_icon: <FaPhone />,
     phone: "+998YYXXXXXXX",
     address_icon: <FaMapMarkerAlt />,
-    address:
-      "Mirobod tumani, A.Banokatiy ko'chasi 17-uy. Mo'ljal: Shimoliy vokzal. Miroobd MIB",
+    address: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
     facebook_icon: <FaFacebookF />,
     telegram_icon: <FaTelegramPlane />,
     instagram_icon: <FaInstagram />,
@@ -28,7 +28,7 @@ export const directors = [
   {
     id: 2,
     img: "",
-    settings: "",
+    settings: <GrUserSettings />,
     name: "Zemfira Talgatovna",
     branch: "Olmazor filiali direktori",
     email_icon: <MdEmail />,

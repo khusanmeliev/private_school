@@ -1,22 +1,5 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 90px;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgb(6, 2, 80) 0%,
-    rgb(21, 21, 137) 59%,
-    rgb(2, 109, 130) 100%
-  );
-  display: flex;
-  flex-direction: row;
-  position: fixed;
-  z-index: 1;
-`;
 export const Logo = styled.div`
   width: 30%;
   height: 100%;
@@ -58,19 +41,6 @@ export const NavMenu = styled.div`
     &:hover {
       transition: 0.2s;
       margin-top: -5px;
-    }
-  }
-  button {
-    width: 160px;
-    height: 30px;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    background-color: inherit;
-    color: white;
-    font-size: 15px;
-    &:hover {
-      border-bottom: 1px solid white;
     }
   }
 `;

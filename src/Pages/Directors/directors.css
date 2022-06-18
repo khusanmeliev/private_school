@@ -14,48 +14,6 @@ body {
   flex-direction: column;
 }
 
-.directors_page .branches {
-  width: 100%;
-  height: 150px;
-  background-color: rebeccapurple;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.directors_page .branches__title {
-  width: 100%;
-  height: 40%;
-  background-color: pink;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.directors_page .branches__btn {
-  width: 90%;
-  height: 60%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.directors_page .branches__btn button {
-  width: 170px;
-  height: 50px;
-  background-color: blue;
-  color: white;
-  border: none;
-  outline: none;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 700;
-  box-shadow: 0 7px 16px rgb(12 12 12 / 22%);
-}
-
 .directors_details {
   width: 100%;
   height: auto;
@@ -96,18 +54,18 @@ body {
   flex-direction: column;
 }
 
-.directors_details__box li .boxes {
+.directors_details__box li .card {
   width: 73%;
   height: 470px;
   background-color: red;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: 8px;
   margin: 20px;
 }
 
-.boxes__img {
+.card__img {
   width: 40%;
   height: 100%;
   background-color: green;
@@ -115,29 +73,22 @@ body {
   align-items: center;
   justify-content: center;
 }
-.boxes__img img {
+.card__img img {
   width: 100%;
   height: 100%;
 }
 
-.boxes__details {
-  width: 60%;
+.card__details {
+  width: 50%;
   height: 100%;
   background-color: aqua;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.boxes__details__box {
-  width: 85%;
-  height: 100%;
-  display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   flex-direction: column;
 }
-.boxes__details__box .top {
+
+.card__details .top {
   width: 100%;
   height: 40%;
   background-color: yellow;
@@ -145,7 +96,7 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
-.boxes__details__box .top .row {
+.card__details .top .row {
   width: 85%;
   height: 70%;
   background-color: gray;
@@ -154,15 +105,16 @@ body {
   justify-content: center;
   border-radius: 8px;
 }
-.boxes__details__box .top .row .left {
+.card__details .top .row .left {
   width: 30%;
   height: 100%;
   background-color: green;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 40px;
 }
-.boxes__details__box .top .row .right {
+.card__details .top .row .right {
   width: 70%;
   height: 100%;
   background-color: pink;
@@ -170,20 +122,83 @@ body {
   align-items: center;
   justify-content: center;
 }
+.card__details .top .row .right ul {
+  width: 70%;
+  height: 100%;
+  background-color: green;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.card__details .top .row .right ul li {
+  font-size: 20px;
+  font-weight: 700;
+}
 
-.boxes__details__box .middle {
-  width: 100%;
+.card__details .top .row .right ul li span {
+}
+
+.card__details .middle {
+  width: 90%;
   height: 40%;
   background-color: blue;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  flex-direction: column;
 }
-.boxes__details__box .bottom {
+.card__details .middle ul {
+  width: 60%;
+  height: 100%;
+  background-color: green;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.card__details .middle ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  font-size: 16px;
+}
+.card__details .middle ul li span {
+  margin: 10px;
+}
+
+.card__details .bottom {
   width: 100%;
   height: 20%;
   background-color: green;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+}
+.card__details .bottom ul {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: red;
+}
+
+.card__details .bottom ul li {
+  width: 120px;
+  height: 35px;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  font-size: 20px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 20px;
+  color: blue;
+}
+.card__details .bottom ul li:hover {
+  transform: translateY(-5px);
+  transition: 1s;
+  cursor: pointer;
 }

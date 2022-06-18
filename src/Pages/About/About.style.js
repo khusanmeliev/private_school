@@ -4,7 +4,7 @@ export const Container = styled.div`
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 88vh;
+  height: 570px;
   display: flex;
   flex-direction: row;
 `;
@@ -15,36 +15,25 @@ export const PreferencesText = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-  }
-  li {
-    width: 500px;
-    text-indent: 60px;
-    list-style-type: none;
-    font-family: serif;
-    color: rgb(68, 68, 68);
-  }
 `;
 
 export const TextBox = styled.div`
   width: 85%;
-  height: 90%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  h2 {
-    font-size: 38px;
-    text-indent: 80px;
-    letter-spacing: 1.5px;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  gap: 18px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
   }
-  h3 {
-    font-size: 20px;
+  li {
+    width: 500px;
+    text-indent: 20px;
+    list-style-type: none;
     font-family: serif;
-    color: rgb(85, 85, 85);
+    color: rgb(68, 68, 68);
   }
 `;
 
@@ -59,7 +48,7 @@ export const StatisticsContainer = styled.div`
   height: 85%;
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 70px;
 `;
 export const StatisticsBox = styled.div`
   width: 230px;
@@ -69,9 +58,6 @@ export const StatisticsBox = styled.div`
   align-items: center;
   justify-content: space-around;
   font-weight: bold;
-  h2 {
-    font-family: serif;
-  }
 `;
 export const NumberBox = styled.div`
   width: 60%;

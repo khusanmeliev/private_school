@@ -1,5 +1,6 @@
 import React from "react";
 import { TiTick } from "react-icons/ti";
+import { StyledHeading } from "../../components/Text/StyledText";
 import {
   Container,
   NumberBox,
@@ -9,14 +10,19 @@ import {
   StatisticsContainer,
   TextBox,
 } from "./About.style";
+import { statisticsBox } from "./statisticsBox";
 
 function About() {
   return (
     <Container>
       <PreferencesText>
         <TextBox>
-          <h2>Biz haqimizda qisqacha!</h2>
-          <h3>Bizning asosiy afzalliklarimiz:</h3>
+          <StyledHeading fontSize="40px" textIndent="40px">
+            Biz haqimizda qisqacha!
+          </StyledHeading>
+          <StyledHeading fontSize="25px" color="rgb(85, 85, 85)">
+            Bizning asosiy afzalliklarimiz:
+          </StyledHeading>
           <ul>
             <li>
               Har bir o'quvchiga individual yondashadigan malakali
@@ -42,7 +48,9 @@ function About() {
               <TiTick /> Ta'lim tili - rus tili.
             </li>
           </ul>
-          <h3>Profi School - We teach better!</h3>
+          <StyledHeading fontSize="25px" color="rgb(85, 85, 85)">
+            Profi School - We teach better!
+          </StyledHeading>
         </TextBox>
       </PreferencesText>
 
@@ -54,25 +62,25 @@ function About() {
             <NumberBox>
               900<span>+</span>
             </NumberBox>
-            <h2>O'quvchilar soni</h2>
+            <StyledHeading>O'quvchilar soni</StyledHeading>
           </StatisticsBox>
           <StatisticsBox>
-            <NumberBox>80+</NumberBox>
-            <h2>
-              IELTS 7.0<span>+</span>
-            </h2>
+            <NumberBox>
+              80<span>+</span>
+            </NumberBox>
+            <StyledHeading>IELTS 7.0+</StyledHeading>
           </StatisticsBox>
           <StatisticsBox>
             <NumberBox>
               210<span>+</span>
             </NumberBox>
-            <h2>O'qituvchilar soni</h2>
+            <StyledHeading>O'qituvchilar soni</StyledHeading>
           </StatisticsBox>
           <StatisticsBox>
             <NumberBox>
               50<span>+</span>
             </NumberBox>
-            <h2>Davlat granti asosida o'qishga kirganlar</h2>
+            <StyledHeading>Davlat granti asosida o'qishga kirganlar</StyledHeading>
           </StatisticsBox>
         </StatisticsContainer>
       </Statistics>
