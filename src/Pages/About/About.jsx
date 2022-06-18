@@ -1,90 +1,146 @@
 import React from "react";
 import { TiTick } from "react-icons/ti";
-import { StyledHeading } from "../../components/Text/StyledText";
+import Heading from "../../components/Heading/Heading";
+import Flexbox from "../../components/Flexbox/Flexbox";
 import {
-  Container,
-  NumberBox,
-  PreferencesText,
-  Statistics,
-  StatisticsBox,
+  Navlist,
   StatisticsContainer,
-  TextBox,
+  Wrapper,
 } from "./About.style";
-import { statisticsBox } from "./statisticsBox";
 
 function About() {
   return (
-    <Container>
-      <PreferencesText>
-        <TextBox>
-          <StyledHeading fontSize="40px" textIndent="40px">
-            Biz haqimizda qisqacha!
-          </StyledHeading>
-          <StyledHeading fontSize="25px" color="rgb(85, 85, 85)">
-            Bizning asosiy afzalliklarimiz:
-          </StyledHeading>
-          <ul>
-            <li>
-              Har bir o'quvchiga individual yondashadigan malakali
-              o'qituvchilar;
-            </li>
-            <li>
-              <TiTick /> Kuniga 3 mahal ovqatlanish;
-            </li>
-            <li>
-              <TiTick />
-              Maktab avtobusi;
-            </li>
-            <li>
-              <TiTick /> Sport va turli to'garaklar;
-            </li>
-            <li>
-              <TiTick /> Interaktiv o'quv jarayoni;
-            </li>
-            <li>
-              <TiTick /> Har xil ko'ngilochar tadbirlar.
-            </li>
-            <li>
-              <TiTick /> Ta'lim tili - rus tili.
-            </li>
-          </ul>
-          <StyledHeading fontSize="25px" color="rgb(85, 85, 85)">
-            Profi School - We teach better!
-          </StyledHeading>
-        </TextBox>
-      </PreferencesText>
+    <Wrapper>
+      <Flexbox flexWrap="wrap" flexDirection="row">
+        <Flexbox width="50%">
+          <Navlist>
+            <Heading size="lg" textIndent="40px">
+              Biz haqimizda qisqacha!
+            </Heading>
+            <Heading size="sm" color="rgb(85, 85, 85)">
+              Bizning asosiy afzalliklarimiz:
+            </Heading>
+            <ul>
+              <li>
+                Har bir o'quvchiga individual yondashadigan malakali
+                o'qituvchilar;
+              </li>
+              <li>
+                <TiTick /> Kuniga 3 mahal ovqatlanish;
+              </li>
+              <li>
+                <TiTick />
+                Maktab avtobusi;
+              </li>
+              <li>
+                <TiTick /> Sport va turli to'garaklar;
+              </li>
+              <li>
+                <TiTick /> Interaktiv o'quv jarayoni;
+              </li>
+              <li>
+                <TiTick /> Har xil ko'ngilochar tadbirlar.
+              </li>
+              <li>
+                <TiTick /> Ta'lim tili - rus tili.
+              </li>
+            </ul>
+            <Heading size="sm" color="rgb(85, 85, 85)">
+              Profi School - We teach better!
+            </Heading>
+          </Navlist>
+        </Flexbox>
 
-      {/* <----------------------------> */}
+        {/* <----------------------------> */}
 
-      <Statistics>
-        <StatisticsContainer>
-          <StatisticsBox>
-            <NumberBox>
-              900<span>+</span>
-            </NumberBox>
-            <StyledHeading>O'quvchilar soni</StyledHeading>
-          </StatisticsBox>
-          <StatisticsBox>
-            <NumberBox>
-              80<span>+</span>
-            </NumberBox>
-            <StyledHeading>IELTS 7.0+</StyledHeading>
-          </StatisticsBox>
-          <StatisticsBox>
-            <NumberBox>
-              210<span>+</span>
-            </NumberBox>
-            <StyledHeading>O'qituvchilar soni</StyledHeading>
-          </StatisticsBox>
-          <StatisticsBox>
-            <NumberBox>
-              50<span>+</span>
-            </NumberBox>
-            <StyledHeading>Davlat granti asosida o'qishga kirganlar</StyledHeading>
-          </StatisticsBox>
-        </StatisticsContainer>
-      </Statistics>
-    </Container>
+        <Flexbox width="50%">
+          <StatisticsContainer>
+            <Flexbox
+              width="250px"
+              height="250px"
+              justifyContent="space-around"
+              style={{ fontWeight: "bold" }}
+            >
+              <Flexbox
+                width="50%"
+                height="50%"
+                flexDirection="row"
+                style={{
+                  fontSize: "45px",
+                  borderRadius: "100%",
+                  boxShadow: "rgba(37, 37, 218, 0.2) 0px 4px 29px 0px",
+                }}
+              >
+                900<span>+</span>
+              </Flexbox>
+              <Heading>O'quvchilar soni</Heading>
+            </Flexbox>
+            <Flexbox
+              width="250px"
+              height="250px"
+              justifyContent="space-around"
+              style={{ fontWeight: "bold" }}
+            >
+              <Flexbox
+                width="50%"
+                height="50%"
+                flexDirection="row"
+                style={{
+                  fontSize: "45px",
+                  borderRadius: "100%",
+                  boxShadow: "rgba(37, 37, 218, 0.2) 0px 4px 29px 0px",
+                }}
+              >
+                80<span>+</span>
+              </Flexbox>
+              <Heading>IELTS 7.0+</Heading>
+            </Flexbox>
+            <Flexbox
+              width="250px"
+              height="250px"
+              justifyContent="space-around"
+              style={{ fontWeight: "bold" }}
+            >
+              <Flexbox
+                width="50%"
+                height="50%"
+                flexDirection="row"
+                style={{
+                  fontSize: "45px",
+                  borderRadius: "100%",
+                  boxShadow: "rgba(37, 37, 218, 0.2) 0px 4px 29px 0px",
+                }}
+              >
+                210<span>+</span>
+              </Flexbox>
+              <Heading>O'qituvchilar soni</Heading>
+            </Flexbox>
+            <Flexbox
+              width="250px"
+              height="250px"
+              justifyContent="space-around"
+              style={{ fontWeight: "bold" }}
+            >
+              <Flexbox
+                width="50%"
+                height="50%"
+                flexDirection="row"
+                style={{
+                  fontSize: "45px",
+                  borderRadius: "100%",
+                  boxShadow: "rgba(37, 37, 218, 0.2) 0px 4px 29px 0px",
+                }}
+              >
+                50<span>+</span>
+              </Flexbox>
+              <Heading style={{ fontSize: "22px" }}>
+                Davlat granti asosida o'qishga kirganlar
+              </Heading>
+            </Flexbox>
+          </StatisticsContainer>
+        </Flexbox>
+      </Flexbox>
+    </Wrapper>
   );
 }
 

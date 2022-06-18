@@ -1,65 +1,53 @@
 import React from "react";
-import { directors } from "../../mock/about_dir";
-import "./directors.css";
+import Flexbox from "../../components/Flexbox/Flexbox";
+import Heading from "../../components/Heading/Heading";
+import Text from "../../components/Text/Text";
+import { directors } from "../../mock/directors";
+import { Icon, Image } from "./styles";
 
 function Directors() {
   return (
-    <>
-      <div className="directors_page">
-        <div className="directors_details">
-          <div className="directors_details__title">
-            Maktabimiz direktorlari haqida ma'lumot!
-          </div>
-          <div className="directors_details__box">
-            {directors.map((info) => (
-              <li key={info.id}>
-                <div className="card">
-                  <div className="card__img">
-                    <img src={info.img} alt="" />
-                  </div>
-                  <div className="card__details">
-                    <div className="top">
-                      <div className="row">
-                        <div className="left">{info.settings}</div>
-                        <div className="right">
-                          <ul>
-                            <li>{info.name}</li>
-                            <span>{info.branch}</span>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="middle">
-                      <ul>
-                        <li>
-                          {info.email_icon}
-                          <span> {info.email}</span>
-                        </li>
-                        <li>
-                          {info.phone_icon}
-                          <span>{info.phone}</span>
-                        </li>
-                        <li>
-                          {info.address_icon}
-                          <span>{info.address}</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="bottom">
-                      <ul>
-                        <li>{info.facebook_icon}</li>
-                        <li>{info.telegram_icon}</li>
-                        <li>{info.instagram_icon}</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            ))}
-          </div>
-        </div>
-      </div>
-    </>
+    <Flexbox style={{ backgroundColor: "grey" }}>
+      <Heading size="lg">Maktabimiz direktorlari haqida ma'lumot!</Heading>
+      {directors.map((info) => (
+        <Flexbox flexDirection="row" style={{ backgroundColor: "yellow" }}>
+          <Image src={info.img} alt="" />
+          <Flexbox
+            alignItems="space-between"
+            width="40%"
+            style={{ backgroundColor: "green" }}
+          >
+            <div>
+              <Flexbox flexDirection="row" gap="10px">
+                <Flexbox>{info.settings}</Flexbox>
+                <Text>{info.name}</Text>
+              </Flexbox>
+            </div>
+            <div>
+              <Flexbox flexDirection="row" gap="10px">
+                {info.email_icon}
+                <Text>{info.email}</Text>
+              </Flexbox>
+              <Flexbox flexDirection="row" gap="10px">
+                {info.phone_icon}
+                <Text>{info.phone}</Text>
+              </Flexbox>
+              <Flexbox flexDirection="row" gap="10px">
+                {info.address_icon}
+                <Text>{info.address}</Text>
+              </Flexbox>
+            </div>
+            <div>
+              <Flexbox flexDirection="row" gap="10px">
+                <Icon>{info.facebook_icon}</Icon>
+                <Icon>{info.telegram_icon}</Icon>
+                <Icon>{info.instagram_icon}</Icon>
+              </Flexbox>
+            </div>
+          </Flexbox>
+        </Flexbox>
+      ))}
+    </Flexbox>
   );
 }
 

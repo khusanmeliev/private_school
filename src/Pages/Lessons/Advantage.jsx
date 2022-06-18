@@ -1,113 +1,74 @@
 import React from "react";
 import { BiTrendingUp } from "react-icons/bi";
-import { boxes } from "../../mock/boxes";
-import { StyledHeading } from "../../components/Text/StyledText";
-import { FlexBox } from "../../components/FlexBox/FlexBox";
+import Flexbox from "../../components/Flexbox/Flexbox";
 import {
-  AdvantagesBox,
-  AdvantagesDownBoxes,
-  AdvantagesDownBoxesBox,
-  AdvantagesLesson,
-  AdvantagesLessonBoxes,
-  AdvantagesLessonBoxesBox,
   AdvantagesLessonBoxesBoxTxtBox,
-  AdvantagesLessonLine,
-  AdvantagesUp,
   UpLine,
-  IconPart,
-  TextPart,
-  DownBoxes,
+  LessonBox,
+  LessonBoxes,
+  AdvantagesCard,
+  GoalsCard,
 } from "./Advantage.style";
-function Advantage() {
+import Heading from "../../components/Heading/Heading";
+import Text from "../../components/Text/Text";
+import Button from "../../components/Button/Button";
+import { about } from "../../mock/about";
+
+const Advantage = () => {
   return (
-    <FlexBox flexDirection="column">
-      <FlexBox flexDirection="column">
-        <StyledHeading fontSize="40px">Bizning afzalliklarimiz</StyledHeading>
-        <UpLine />
-      </FlexBox>
-      <FlexBox height="auto" flexWrap="wrap" marginTop="20px" gap="20px">
-        {boxes.map((box) => (
-          <AdvantagesBox>
-            <span>{box.icon}</span>
-            <h1>{box.title}</h1>
-            <p>{box.text}</p>
-          </AdvantagesBox>
+    <Flexbox>
+      <Heading size="lg">Bizning afzalliklarimiz</Heading>
+      <UpLine />
+      <Flexbox flexDirection="row" flexWrap="wrap">
+        {about.map((el) => (
+          <AdvantagesCard>
+            <span>{el.icon}</span>
+            <h1>{el.title}</h1>
+            <p>{el.text}</p>
+          </AdvantagesCard>
         ))}
-      </FlexBox>
-      <FlexBox>
-        <AdvantagesDownBoxesBox>
-          <FlexBox fontSize="90px" width="40%" borderRadius="10px">
+      </Flexbox>
+      <Flexbox flexDirection="row" width="100%">
+        <GoalsCard>
+          <div style={{ fontSize: "90px", color: "white" }}>
             <BiTrendingUp />
-          </FlexBox>
-          <FlexBox
-            flexDirection="column"
+          </div>
+          <Flexbox
             alignItems="flexStart"
             gap="20px"
             width="60%"
             borderRadius="10px"
           >
-            <StyledHeading fontSize="30px" color="white">
-              Bizning vazifamiz
-            </StyledHeading>
-            <StyledHeading color="white">Hayotga tayyorlaymiz.</StyledHeading>
-          </FlexBox>
-        </AdvantagesDownBoxesBox>
-        <AdvantagesDownBoxesBox>
-          <FlexBox fontSize="90px" width="40%" borderRadius="10px">
+            <Heading color="white">Bizning vazifamiz</Heading>
+            <Text color="white" size="lg">
+              Hayotga tayyorlaymiz.
+            </Text>
+          </Flexbox>
+        </GoalsCard>
+        <GoalsCard>
+          <div style={{ fontSize: "90px", color: "white" }}>
             <BiTrendingUp />
-          </FlexBox>
-          <FlexBox
-            flexDirection="column"
+          </div>
+          <Flexbox
             alignItems="flexStart"
             gap="20px"
             width="60%"
             borderRadius="10px"
           >
-            <StyledHeading fontSize="30px" color="white">
-              Bizning maqsadimiz
-            </StyledHeading>
-            <StyledHeading color="white" fontSize="16px ">
+            <Heading color="white">Bizning maqsadimiz</Heading>
+            <Text color="white" size="lg">
               Ta'lim sifatni saqlab va oshirgan holda xususiy maktablar orasida
               lider bo’lish.
-            </StyledHeading>
-          </FlexBox>
-        </AdvantagesDownBoxesBox>
-        {/* <AdvantagesDownBoxesBox>
-          <AdvantagesDownBoxesBoxSmallBox>
-            <AdvantagesDownBoxesBoxSmallBoxIcon>
-            </AdvantagesDownBoxesBoxSmallBoxIcon>
-            <AdvantagesDownBoxesBoxSmallBoxText>
-              <h1>Bizning vazifamiz</h1>
-              <p>Hayotga tayyorlaymiz.</p>
-            </AdvantagesDownBoxesBoxSmallBoxText>
-          </AdvantagesDownBoxesBoxSmallBox>
-        </AdvantagesDownBoxesBox> */}
-        {/* <AdvantagesDownBoxesBox>
-          <AdvantagesDownBoxesBoxSmallBox>
-            <AdvantagesDownBoxesBoxSmallBoxIcon>
-              <BiTrendingUp />
-            </AdvantagesDownBoxesBoxSmallBoxIcon>
-            <AdvantagesDownBoxesBoxSmallBoxText>
-              <h1>Bizning maqsadimiz</h1>
-              <p>
-                Ta'lim sifatni saqlab va oshirgan holda xususiy maktablar
-                orasida lider bo’lish.
-              </p>
-            </AdvantagesDownBoxesBoxSmallBoxText>
-          </AdvantagesDownBoxesBoxSmallBox>
-        </AdvantagesDownBoxesBox> */}
-      </FlexBox>
-      <FlexBox flexDirection="column" marginTop="20px">
-        <StyledHeading fontSize="40px">Bizning Darslarimiz</StyledHeading>
+            </Text>
+          </Flexbox>
+        </GoalsCard>
+      </Flexbox>
+      <Flexbox marginTop="20px">
+        <Heading size="lg">Bizning Darslarimiz</Heading>
         <UpLine />
-        <DownBoxes>
-          <FlexBox
-            width="40%"
-            height="320px"
-            borderRadius="10px"
-            flexDirection="column"
-          >
-            <h2>Science in English</h2>
+        <LessonBoxes>
+          <LessonBox>
+            <Heading>SCIENCE IN ENGLISH</Heading>
             <AdvantagesLessonBoxesBoxTxtBox>
               Bepul
             </AdvantagesLessonBoxesBoxTxtBox>
@@ -116,10 +77,17 @@ function Advantage() {
               <li>Dars davomiyligi: 5-9 sinflar</li>
               <li>Kurs to'lovlari maktab to'lovi ichiga kiritilgan</li>
             </ul>
-            <button>Aloqa</button>
-          </FlexBox>
-          <AdvantagesLessonBoxesBox>
-            <h2>SPEAKING COURSE</h2>
+            <Button
+              width="95%"
+              height="45px"
+              borderRadius="20px"
+              bgColor="#000c3f"
+            >
+              Aloqa
+            </Button>
+          </LessonBox>
+          <LessonBox>
+            <Heading>SPEAKING COURSE</Heading>
             <AdvantagesLessonBoxesBoxTxtBox>
               Bepul
             </AdvantagesLessonBoxesBoxTxtBox>
@@ -128,16 +96,19 @@ function Advantage() {
               <li>Kurs davomiyligi: cheklanmagan</li>
               <li>Kurs to'lovlari maktab to'lovi ichiga kiritilgan.</li>
             </ul>
-            <button>Aloqa</button>
-          </AdvantagesLessonBoxesBox>
-        </DownBoxes>
-      </FlexBox>
-    </FlexBox>
+            <Button
+              width="95%"
+              height="45px"
+              borderRadius="20px"
+              bgColor="#000c3f"
+            >
+              Aloqa
+            </Button>
+          </LessonBox>
+        </LessonBoxes>
+      </Flexbox>
+    </Flexbox>
   );
-}
+};
 
-// const AdvantagesLesson = styled.div``;
-// const AdvantagesLesson = styled.div``;
-// const AdvantagesLesson = styled.div``;
-// const AdvantagesLesson = styled.div``;
 export default Advantage;
