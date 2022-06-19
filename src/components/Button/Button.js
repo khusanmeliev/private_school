@@ -5,6 +5,8 @@ const Button = styled.button`
   height: ${({ height }) => height || '30px'};
   background-color: ${({ bgColor }) => bgColor};
   border-radius: ${({ borderRadius }) => borderRadius || '8px'};
+  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
   border: none;
   outline: none;
   cursor: pointer;

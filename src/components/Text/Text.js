@@ -18,6 +18,7 @@ const Text = styled.p`
   ${({ size }) => textSize[size || 'md']};
   color: ${({ color }) => color || `${colors.grey}`};
   text-align: ${({ align }) => align || 'start'};
+  font-family: 'Roboto Slab', serif;
 `;
 
 export default Text;

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Image, List, MenuButton, Wrapper } from './Navbar.style';
+import { List, Logo, MenuButton, Wrapper } from './Navbar.style';
 import { AiOutlineMenu } from 'react-icons/ai';
 import Flexbox from '../../components/Flexbox/Flexbox';
 
@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <Wrapper ref={navbar}>
       <Flexbox flexDirection="row" width="100%" height="100%" justifyContent="space-between">
-        <Image src="https://profimaktab.uz/wp-content/uploads/2021/08/cropped-profi-school.png" alt="" />
+        <Logo>Elite School</Logo>
         <ul>
           <Flexbox flexDirection="row" justifyContent="space-around" gap="30px">
             <a href="">

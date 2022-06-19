@@ -17,7 +17,6 @@ export const Navlist = styled.ul`
 
   li {
     list-style-type: none;
-    font-family: serif;
     color: ${colors.grey};
   }
 `;
