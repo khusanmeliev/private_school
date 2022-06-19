@@ -1,28 +1,102 @@
-import React from "react";
-import Flexbox from "../../components/Flexbox/Flexbox";
-import Heading from "../../components/Heading/Heading";
-import { Wrapper, Form, Image } from "./Contact.style";
+import React from 'react';
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
+import Button from '../../components/Button/Button';
+import Flexbox from '../../components/Flexbox/Flexbox';
+import Heading from '../../components/Heading/Heading';
+import Text from '../../components/Text/Text';
+import {
+  Wrapper,
+  Form,
+  Image,
+  DownWrapper,
+  ContactBox,
+  Left,
+  Right,
+} from './Contact.style';
 
-function Contact() {
+const Contact = () => {
   return (
-    <Wrapper>
-      <Flexbox flexDirection="row" height="100%">
-        <Flexbox width="45%">
+    <Flexbox>
+      <Wrapper>
+        <ContactBox>
+          <Left>
+            <Image
+              src="https://profimaktab.uz/wp-content/uploads/2021/08/cropped-profi-school.png"
+              alt=""
+            />
+            <Heading size="sm" textAlign="center" color="#00264b">
+              Savollaringiz bormi? Bizga yozing, biz sizga 15 daqiqa ichida
+              javob beramiz!
+            </Heading>
+          </Left>
+          <Right>
+            <Form>
+              <p>Ismingiz</p>
+              <input type="text" />
+              <p>Telefon raqamingiz</p>
+              <input
+                type="number"
+                placeholder="+998 (__) ___ __ __"
+                id="mobile"
+              />
+              <textarea placeholder="Salom! Sizga qanday yordam bera olamiz?" />
+              <Button
+                bgColor="#fa9722"
+                width="100%"
+                height="45px"
+                style={{
+                  boxShadow: '-1px 0px 13px -6px rgba(0,0,0,0.75)',
+                  fontSize: '20px',
+                  fontWeight: 'bold',
+                  marginTop: '25px',
+                }}
+              >
+                Yuborish
+              </Button>
+            </Form>
+          </Right>
+        </ContactBox>
+      </Wrapper>
+      <DownWrapper>
+        <Flexbox>
           <Image
+            style={{ width: '100px' }}
             src="https://profimaktab.uz/wp-content/uploads/2021/08/cropped-profi-school.png"
-            alt=""
+            alt="school_pic"
           />
-          <Heading size="lg" textAlign="center">
-            Savollaringiz bormi? Bizga yozing, biz sizga 15 daqiqa ichida javob
-            beramiz!s
+          <Heading>
+            <Text size="lg" color="white">
+              Aloqa
+            </Text>
+            <Text size="lg" color="white">
+              Telefon raqam 78-777-11-11
+            </Text>
+            <Text size="lg" color="white">
+              Email admin@profimaktab.uz
+            </Text>
           </Heading>
         </Flexbox>
-        <Flexbox width="55%">
-          <Form></Form>
+        <Flexbox>
+          <Heading color="white">Ijtimoiy tarmoqlarimiz</Heading>
+          <Flexbox flexDirection="row" gap="20px">
+            <FaFacebook
+              style={{
+                color: 'white',
+                fontSize: '30px',
+              }}
+            />
+            <FaInstagram style={{ color: 'white', fontSize: '30px' }} />
+            <FaYoutube style={{ color: 'white', fontSize: '30px' }} />
+          </Flexbox>
         </Flexbox>
-      </Flexbox>
-    </Wrapper>
+        <Flexbox>
+          <Text size="lg" color="white" style={{ fontSize: '20px' }}>
+            designed and development idealproject.uz
+          </Text>
+        </Flexbox>
+      </DownWrapper>
+    </Flexbox>
   );
-}
+};
 
 export default Contact;

@@ -11,8 +11,12 @@ export const Wrapper = styled.div`
   );
   position: fixed;
   padding: 0 40px;
-  @media(max-width: 1500) {
+  transition: 0.5s;
+  @media(min-width: 1500px) {
     width: auto;
+  }
+  a{
+    text-decoration: none;
   }
 `;
 
@@ -37,4 +41,5 @@ export const List = styled.li`
     margin-top: -5px;
   }
 `;
+
 

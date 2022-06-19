@@ -5,10 +5,12 @@ export const Card = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  border: 1px solid black;
 `;
 
 export const Image = styled.img`
   width: 40%;
+  border-radius: 8px 0 0 8px;
 `;
 
 export const Icon = styled.div`

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const UpLine = styled.div`
   width: 90px;
@@ -7,7 +7,20 @@ export const UpLine = styled.div`
   background-image: -webkit-linear-gradient(left, #003cc8, #00d0fc);
   margin-top: 10px;
 `;
-export const AdvantagesCard = styled.div`
+
+export const AdvantagesCards = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media (max-width: 1238px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+`;
+
+export const AdvantagesCardsCards = styled.div`
   width: 28%;
   height: 450px;
   background-color: white;
@@ -19,6 +32,7 @@ export const AdvantagesCard = styled.div`
   flex-direction: column;
   text-align: center;
   border: 1px solid #f5f5f5;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 11%);
   &:hover {
     background-color: transparent;
     background-image: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
@@ -33,6 +47,16 @@ export const AdvantagesCard = styled.div`
   }
   p {
     width: 90%;
+    @media (max-width: 1220px) {
+      width: 60%;
+    }
+    @media (max-width: 720px) {
+      width: 90%;
+    }
+  }
+  @media (max-width: 1220px) {
+    width: 70%;
+    height: auto;
   }
 `;
 
@@ -71,8 +95,11 @@ export const GoalsCard = styled.div`
   }
   @media (max-width: 999px) {
     width: 80%;
+    height: auto;
+    flex-direction: column;
   }
 `;
+
 export const LessonBoxes = styled.div`
   width: 100%;
   height: auto;
@@ -88,9 +115,10 @@ export const LessonBoxes = styled.div`
     justify-content: center;
   }
 `;
+
 export const LessonBox = styled.div`
   width: 40%;
-  height: 320px;
+  height: 350px;
   background-color: inherit;
   display: flex;
   justify-content: space-around;
@@ -98,7 +126,6 @@ export const LessonBox = styled.div`
   flex-direction: column;
   box-shadow: 0 1px 10px rgb(0 0 0 / 11%);
   border-radius: 10px;
-
   @media (max-width: 1175px) {
     width: 80%;
     margin: 30px;

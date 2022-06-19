@@ -1,19 +1,19 @@
-import React from "react";
-import Button from "../../components/Button/Button";
-import Heading from "../../components/Heading/Heading";
-import Text from "../../components/Text/Text";
-import Flexbox from "../../components/Flexbox/Flexbox";
+import React from 'react';
+import Button from '../../components/Button/Button';
+import Heading from '../../components/Heading/Heading';
+import Text from '../../components/Text/Text';
+import Flexbox from '../../components/Flexbox/Flexbox';
 
-function Home() {
+const Home = () => {
   return (
     <Flexbox height="100vh">
       <Heading size="lg" fontFamily="sans-serif">
-        <span style={{ color: "#f8a408" }}>Profi School</span> Imkoniyatlar
-        chegaralanmagan makon
+        <span style={{ color: '#f8a408' }}>Profi School</span>
+        Imkoniyatlar chegaralanmagan makon
       </Heading>
       <Text
         size="lg"
-        style={{ width: "600px", textAlign: "center", letterSpacing: "1px" }}
+        style={{ width: '600px', textAlign: 'center', letterSpacing: '1px' }}
       >
         Profi School – Xususiy maktabi ikki yildan ziyod vaqt mobaynida faoliyat
         olib bormoqda. Maktabda o’z sohasining eng ko’zga ko’ringan, yuqori
@@ -22,11 +22,11 @@ function Home() {
       </Text>
       <a href="#">
         <Button bgColor="#ffa500" width="200px" height="35px">
-          Biz bilan bog'lanish
+          Biz bilan bog`lanish
         </Button>
       </a>
     </Flexbox>
   );
-}
+};
 
 export default Home;

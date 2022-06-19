@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 const textSize = {
   sm: css`
@@ -13,8 +13,14 @@ const textSize = {
 };
 
 const Text = styled.p`
-  ${({ size }) => textSize[size || "md"]};
-  color: ${({ color }) => color || "black"};
+  ${({ size }) => textSize[size || 'md']};
+  color: ${({ color }) => color || 'black'};
+  text-align: ${({ textAlign }) => textAlign};
+
+  @media (max-width: 600px) {
+    width: auto;
+    height: auto;
+  }
 `;
 
 export default Text;
