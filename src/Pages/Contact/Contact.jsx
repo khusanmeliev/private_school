@@ -4,15 +4,7 @@ import Button from '../../components/Button/Button';
 import Flexbox from '../../components/Flexbox/Flexbox';
 import Heading from '../../components/Heading/Heading';
 import Text from '../../components/Text/Text';
-import {
-  Wrapper,
-  Form,
-  Image,
-  DownWrapper,
-  ContactBox,
-  Left,
-  Right,
-} from './Contact.style';
+import { Wrapper, Form, Image, DownWrapper, ContactBox, Left, Right } from './Contact.style';
 
 const Contact = () => {
   return (
@@ -20,13 +12,9 @@ const Contact = () => {
       <Wrapper>
         <ContactBox>
           <Left>
-            <Image
-              src="https://profimaktab.uz/wp-content/uploads/2021/08/cropped-profi-school.png"
-              alt=""
-            />
+            <Image src="https://profimaktab.uz/wp-content/uploads/2021/08/cropped-profi-school.png" alt="" />
             <Heading size="sm" textAlign="center" color="#00264b">
-              Savollaringiz bormi? Bizga yozing, biz sizga 15 daqiqa ichida
-              javob beramiz!
+              Savollaringiz bormi? Bizga yozing, biz sizga 15 daqiqa ichida javob beramiz!
             </Heading>
           </Left>
           <Right>
@@ -34,11 +22,7 @@ const Contact = () => {
               <p>Ismingiz</p>
               <input type="text" />
               <p>Telefon raqamingiz</p>
-              <input
-                type="number"
-                placeholder="+998 (__) ___ __ __"
-                id="mobile"
-              />
+              <input type="number" placeholder="+998 (__) ___ __ __" id="mobile" />
               <textarea placeholder="Salom! Sizga qanday yordam bera olamiz?" />
               <Button
                 bgColor="#fa9722"
@@ -64,29 +48,16 @@ const Contact = () => {
             src="https://profimaktab.uz/wp-content/uploads/2021/08/cropped-profi-school.png"
             alt="school_pic"
           />
-          <Heading>
-            <Text size="lg" color="white">
-              Aloqa
-            </Text>
-            <Text size="lg" color="white">
-              Telefon raqam 78-777-11-11
-            </Text>
-            <Text size="lg" color="white">
-              Email admin@profimaktab.uz
-            </Text>
-          </Heading>
+          <Heading style={{ margin: 'px', color: 'white' }}>Aloqa</Heading>
+          <Heading style={{ margin: '3px', color: 'white' }}>Telefon raqam 78-777-11-11</Heading>
+          <Text style={{ margin: '3px', color: 'white' }}>Email admin@profimaktab.uz</Text>
         </Flexbox>
         <Flexbox>
           <Heading color="white">Ijtimoiy tarmoqlarimiz</Heading>
           <Flexbox flexDirection="row" gap="20px">
-            <FaFacebook
-              style={{
-                color: 'white',
-                fontSize: '30px',
-              }}
-            />
-            <FaInstagram style={{ color: 'white', fontSize: '30px' }} />
-            <FaYoutube style={{ color: 'white', fontSize: '30px' }} />
+            <FaFacebook />
+            <FaInstagram />
+            <FaYoutube />
           </Flexbox>
         </Flexbox>
         <Flexbox>

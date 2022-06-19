@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { mobile } from '../../assets/styles/sizes';
 
 export const Wrapper = styled.div`
   width: 90%;
@@ -20,10 +21,11 @@ export const ContactBox = styled.div`
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  @media (max-width: 1170px) {
+  ${mobile.lg} {
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    padding: 20px;
   }
 `;
 
@@ -36,7 +38,7 @@ export const Left = styled.div`
 
 export const Right = styled.div`
   width: 50%;
-  @media (max-width: 1170px) {
+  ${mobile.lg} {
     width: 90%;
   }
 `;
@@ -52,10 +54,6 @@ export const Form = styled.form`
   flex-direction: column;
   gap: 10px;
 
-  label {
-    font-weight: 500;
-    font-size: 18px;
-  }
   input {
     width: 100%;
     font-size: 16px;
@@ -63,9 +61,6 @@ export const Form = styled.form`
     border: none;
     border-bottom: 1px solid black;
     outline: none;
-    @media (max-width: 1170px) {
-      width: 100%;
-    }
   }
   textarea {
     height: 120px;
@@ -86,4 +81,14 @@ export const DownWrapper = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 50px;
+  padding: 10px;
+  svg {
+    font-size: 30px;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      margin-top: -15px;
+    }
+  }
 `;

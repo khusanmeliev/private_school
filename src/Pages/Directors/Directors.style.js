@@ -1,15 +1,8 @@
-import styled from "styled-components";
-
-export const Card = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  border: 1px solid black;
-`;
+import styled from 'styled-components';
 
 export const Image = styled.img`
   width: 40%;
+  height: 100%;
   border-radius: 8px 0 0 8px;
 `;
 
@@ -28,4 +21,16 @@ export const Icon = styled.div`
     transition: 1s;
     cursor: pointer;
   }
+`;
+
+export const Card = styled.div`
+  width: 70%;
+  height: 375px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 11%);
+  border-radius: 8px;
+  margin: 10px;
 `;
