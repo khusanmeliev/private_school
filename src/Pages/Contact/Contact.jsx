@@ -4,7 +4,8 @@ import Button from '../../components/Button/Button';
 import Flexbox from '../../components/Flexbox/Flexbox';
 import Heading from '../../components/Heading/Heading';
 import Text from '../../components/Text/Text';
-import { Wrapper, Form, Image, DownWrapper, ContactBox, Left, Right } from './Contact.style';
+import { Logo } from '../../containers/Navbar/Navbar.style';
+import { Wrapper, Form, DownWrapper, ContactBox, Left, Right } from './Contact.style';
 
 const Contact = () => {
   return (
@@ -12,9 +13,9 @@ const Contact = () => {
       <Wrapper>
         <ContactBox>
           <Left>
-            <Image src="https://profimaktab.uz/wp-content/uploads/2021/08/cropped-profi-school.png" alt="" />
+            <Logo>Elite School</Logo>
             <Heading size="sm" textAlign="center" color="#00264b">
-              Savollaringiz bormi? Bizga yozing, biz sizga 15 daqiqa ichida javob beramiz!
+              Savollaringiz bormi? Bizga yozing, tezda javob beramiz!
             </Heading>
           </Left>
           <Right>
@@ -43,14 +44,10 @@ const Contact = () => {
       </Wrapper>
       <DownWrapper>
         <Flexbox>
-          <Image
-            style={{ width: '100px' }}
-            src="https://profimaktab.uz/wp-content/uploads/2021/08/cropped-profi-school.png"
-            alt="school_pic"
-          />
+          <Logo>Elite School</Logo>
           <Heading style={{ margin: 'px', color: 'white' }}>Aloqa</Heading>
-          <Heading style={{ margin: '3px', color: 'white' }}>Telefon raqam 78-777-11-11</Heading>
-          <Text style={{ margin: '3px', color: 'white' }}>Email admin@profimaktab.uz</Text>
+          <Heading style={{ margin: '3px', color: 'white' }}>Telefon raqam: 90-000-00-00</Heading>
+          <Text style={{ margin: '3px', color: 'white' }}>Email: admin@elitemaktab.uz</Text>
         </Flexbox>
         <Flexbox>
           <Heading color="white">Ijtimoiy tarmoqlarimiz</Heading>
@@ -62,7 +59,7 @@ const Contact = () => {
         </Flexbox>
         <Flexbox>
           <Text size="lg" color="white" style={{ fontSize: '20px' }}>
-            designed and development idealproject.uz
+            Powered by `company`
           </Text>
         </Flexbox>
       </DownWrapper>

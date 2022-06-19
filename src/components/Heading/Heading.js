@@ -15,7 +15,7 @@ const headingSize = {
 
 const Heading = styled.h1`
   ${({ size }) => headingSize[size || 'sm']};
-  font-family: ${({ fontFamily }) => fontFamily || 'sans-serif'};
+  font-family: ${({ fontFamily }) => fontFamily || `'Charis SIL', serif`};
   color: ${({ color }) => color || `${colors.black}`};
   text-indent: ${({ textIndent }) => textIndent};
   text-align: ${({ align }) => align || 'center'};

@@ -21,10 +21,14 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Image = styled.img`
-  max-width: 160px;
-  background-repeat: no-repeat;
-  background-size: cover;
+export const Logo = styled.h1`
+  font-size: 36px;
+  font-family: 'Marcellus SC', serif;
+  color: orange;
+
+  ${mobile.lg} {
+    font-size: 30px;
+  }
 `;
 
 export const List = styled.li`

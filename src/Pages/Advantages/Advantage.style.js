@@ -155,4 +155,5 @@ export const PriceLabel = styled.div`
   justify-content: center;
   font-size: 35px;
   color: white;
+  font-family: 'Marcellus SC', serif;
 `;

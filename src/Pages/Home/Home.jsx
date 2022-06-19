@@ -12,9 +12,9 @@ const Home = () => {
         imkoniyatlar chegaralanmagan makon
       </Heading>
       <Text size="lg" align="center">
-        Profi School – Xususiy maktabi ikki yildan ziyod vaqt mobaynida faoliyat olib bormoqda. Maktabda o’z sohasining
-        eng ko’zga ko’ringan, yuqori malakali mutaxassislari faoliyat olib boradi. Maktab ingliz tili va matematikani
-        chuqur o’rgatishga ixtisoslashgan.
+        Elite School xususiy maktabi endigina o`z faoliyatini boshladi. Dastlabki yildanoq maktabda o`z sohasining eng
+        ko`zga ko`ringan, yuqori malakali mutaxassislari faoliyat olib boradi. Maktab ingliz tili va matematikani chuqur
+        o`rgatishga ixtisoslashgan.
       </Text>
       <a href="#">
         <Button bgColor="#ffa500" width="200px" height="35px">
