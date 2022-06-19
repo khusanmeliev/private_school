@@ -21,6 +21,7 @@ export const ContactBox = styled.div`
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+
   ${mobile.lg} {
     flex-direction: column;
     align-items: center;
@@ -31,6 +32,7 @@ export const ContactBox = styled.div`
 
 export const Left = styled.div`
   width: 50%;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,6 +40,7 @@ export const Left = styled.div`
 
 export const Right = styled.div`
   width: 50%;
+
   ${mobile.lg} {
     width: 90%;
   }
@@ -82,6 +85,7 @@ export const DownWrapper = styled.div`
   flex-wrap: wrap;
   margin-top: 50px;
   padding: 10px;
+
   svg {
     font-size: 30px;
     color: white;
