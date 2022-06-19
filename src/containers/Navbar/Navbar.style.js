@@ -1,40 +1,40 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import { mobile, text } from '../../assets/styles/sizes';
 
 export const Wrapper = styled.div`
+  position: fixed;
   width: 100%;
   height: 90px;
-  background: linear-gradient(
-    90deg,
-    rgb(6, 2, 80) 0%,
-    rgb(21, 21, 137) 59%,
-    rgb(2, 109, 130) 100%
-  );
-  position: fixed;
-  padding: 0 40px;
+  background: linear-gradient(90deg, rgb(6, 2, 80) 0%, rgb(21, 21, 137) 59%, rgb(2, 109, 130) 100%);
   transition: 0.5s;
-  @media(min-width: 1500px) {
-    width: auto;
-  }
-  a{
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  a {
     text-decoration: none;
+  }
+
+  ${mobile.lg} {
+    ul {
+      display: none;
+    }
   }
 `;
 
 export const Image = styled.img`
-  width: 190px;
-  height: 50px;
+  max-width: 160px;
   background-repeat: no-repeat;
   background-size: cover;
 `;
 
 export const List = styled.li`
-  width: auto;
-  height: 30px;
-  font-size: 17px;
+  width: fit-content;
+  font-size: ${text.md};
   font-family: serif;
   color: white;
   list-style-type: none;
   cursor: pointer;
+
   &:hover {
     color: rgb(220, 220, 220);
     transition: 0.2s;
@@ -42,4 +42,13 @@ export const List = styled.li`
   }
 `;
 
+export const MenuButton = styled.div`
+  display: none;
 
+  ${mobile.lg} {
+    display: block;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+  }
+`;

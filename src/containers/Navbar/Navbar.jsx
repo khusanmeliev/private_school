@@ -1,28 +1,28 @@
-import React, { useRef } from "react";
-import Flexbox from "../../components/Flexbox/Flexbox";
-import { Image, List, Wrapper } from "./Navbar.style";
+import React, { useRef } from 'react';
+import { Image, List, MenuButton, Wrapper } from './Navbar.style';
+import { AiOutlineMenu } from 'react-icons/ai';
+import Flexbox from '../../components/Flexbox/Flexbox';
 
-function Navbar() {
+const Navbar = () => {
   const navbar = useRef(null);
-   let prevScrollpos = window.pageYOffset;
-   window.onscroll = function () {
-      let currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-         navbar.current.style.top = '0';
-      } else {
-         navbar.current.style.top = '-100px';
-      }
-      prevScrollpos = currentScrollPos;
-   };
+  let prevScrollpos = window.pageYOffset;
+
+  window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      navbar.current.style.top = '0';
+    } else {
+      navbar.current.style.top = '-100px';
+    }
+    prevScrollpos = currentScrollPos;
+  };
+
   return (
     <Wrapper ref={navbar}>
-      <Flexbox flexDirection="row" width="100%" height="100%" gap="40px">
-        <Image
-          src="https://profimaktab.uz/wp-content/uploads/2021/08/cropped-profi-school.png"
-          alt=""
-        />
+      <Flexbox flexDirection="row" width="100%" height="100%" justifyContent="space-between">
+        <Image src="https://profimaktab.uz/wp-content/uploads/2021/08/cropped-profi-school.png" alt="" />
         <ul>
-          <Flexbox gap="60px" flexDirection="row" >
+          <Flexbox flexDirection="row" justifyContent="space-around" gap="30px">
             <a href="">
               <List>Bosh sahifa</List>
             </a>
@@ -39,13 +39,16 @@ function Navbar() {
               <List>Darslar</List>
             </a>
             <a href="#">
-              <List>Bog'lanish</List>
+              <List>Bog`lanish</List>
             </a>
           </Flexbox>
         </ul>
+        <MenuButton>
+          <AiOutlineMenu />
+        </MenuButton>
       </Flexbox>
     </Wrapper>
   );
-}
+};
 
 export default Navbar;
