@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { mobile } from '../../assets/styles/sizes';
 
 export const UpLine = styled.div`
   width: 90px;
@@ -9,60 +10,60 @@ export const UpLine = styled.div`
 `;
 
 export const AdvantagesCards = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  @media (max-width: 1238px) {
+  gap: 20px;
+  margin-top: 40px;
+
+  ${mobile.lg} {
     flex-direction: column;
     gap: 20px;
   }
 `;
 
-export const AdvantagesCardsCards = styled.div`
-  width: 28%;
-  height: 450px;
-  background-color: white;
-  margin: 12px;
-  border-radius: 5px;
+export const Card = styled.div`
+  width: 300px;
+  height: 400px;
+  padding: 20px 40px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
   border: 1px solid #f5f5f5;
   box-shadow: 0 1px 10px rgb(0 0 0 / 11%);
+
   &:hover {
     background-color: transparent;
     background-image: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
     color: white;
   }
+
   span {
     font-size: 45px;
     color: blue;
   }
-  h1 {
-    margin: 15px;
-  }
-  p {
-    width: 90%;
-    @media (max-width: 1220px) {
-      width: 60%;
-    }
-    @media (max-width: 720px) {
-      width: 90%;
-    }
-  }
-  @media (max-width: 1220px) {
-    width: 70%;
+
+  ${mobile.lg} {
     height: auto;
   }
 `;
 
+export const GoalsWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+`;
+
 export const GoalsCard = styled.div`
-  width: 40%;
-  height: 180px;
+  width: 500px;
+  height: 200px;
   background-color: #fa9722;
   margin: 15px;
   border-radius: 10px;
@@ -71,10 +72,11 @@ export const GoalsCard = styled.div`
   justify-content: center;
   transition: 0.3s;
   cursor: pointer;
-  margin-top: 90px;
+
   &:nth-child(2) {
     background-color: #203860;
   }
+
   &:hover {
     background: rgb(2, 0, 36);
     background: linear-gradient(
@@ -90,14 +92,17 @@ export const GoalsCard = styled.div`
       rgba(3, 116, 198, 1) 94%
     );
   }
-  @media (max-width: 1180px) {
-    margin: 20px;
+
+  ${mobile.lg} {
+    width: 400px;
   }
-  @media (max-width: 999px) {
-    width: 80%;
-    height: auto;
-    flex-direction: column;
-  }
+`;
+
+export const LessonsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const LessonBoxes = styled.div`
@@ -107,46 +112,32 @@ export const LessonBoxes = styled.div`
   font-family: sans-serif;
   margin-top: 50px;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  @media (max-width: 1175px) {
+
+  ${mobile.lg} {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 `;
 
 export const LessonBox = styled.div`
   width: 40%;
   height: 350px;
-  background-color: inherit;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   box-shadow: 0 1px 10px rgb(0 0 0 / 11%);
   border-radius: 10px;
-  @media (max-width: 1175px) {
-    width: 80%;
-    margin: 30px;
-  }
 
-  h2 {
-    color: red;
-    margin-left: 20px;
-    color: black;
-  }
-
-  ul {
-    margin-left: 50px;
-  }
-  ul li {
-    margin: 5px;
-    font-weight: 500;
+  ${mobile.lg} {
+    width: 90%;
   }
 `;
 
-export const AdvantagesLessonBoxesBoxTxtBox = styled.div`
+export const PriceLabel = styled.div`
   width: 100%;
   height: 50px;
   background: rgb(2, 0, 36);

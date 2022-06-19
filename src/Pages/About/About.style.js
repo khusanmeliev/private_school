@@ -1,23 +1,24 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import { colors } from '../../assets/styles/colors';
 
 export const Wrapper = styled.div`
-  padding: 40px 20px;
-  margin: 0;
   width: 100%;
-  height: 570px;
+  height: auto;
 `;
 
 export const Navlist = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
+
+  svg {
+    margin-right: 10px;
+  }
+
   li {
-    width: 500px;
-    text-indent: 20px;
     list-style-type: none;
     font-family: serif;
-    color: rgb(68, 68, 68);
-    margin: 10px;
+    color: ${colors.grey};
   }
 `;
 
@@ -29,4 +30,18 @@ export const StatisticsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+`;
+
+export const CircleBox = styled.div`
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 45px;
+  border-radius: 100%;
+  box-shadow: rgba(37, 37, 218, 0.2) 0px 4px 29px 0px;
+  color: ${colors.blue};
 `;

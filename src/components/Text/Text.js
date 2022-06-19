@@ -1,26 +1,23 @@
 import styled, { css } from 'styled-components';
+import { colors } from '../../assets/styles/colors';
+import { text } from '../../assets/styles/sizes';
 
 const textSize = {
   sm: css`
-    font-size: 12px;
+    font-size: ${text.sm};
   `,
   md: css`
-    font-size: 14px;
+    font-size: ${text.md};
   `,
   lg: css`
-    font-size: 16px;
+    font-size: ${text.lg};
   `,
 };
 
 const Text = styled.p`
   ${({ size }) => textSize[size || 'md']};
-  color: ${({ color }) => color || 'black'};
-  text-align: ${({ textAlign }) => textAlign};
-
-  @media (max-width: 600px) {
-    width: auto;
-    height: auto;
-  }
+  color: ${({ color }) => color || `${colors.grey}`};
+  text-align: ${({ align }) => align || 'start'};
 `;
 
 export default Text;

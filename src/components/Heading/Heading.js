@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { colors } from '../../assets/styles/colors';
 
 const headingSize = {
   sm: css`
@@ -15,14 +16,9 @@ const headingSize = {
 const Heading = styled.h1`
   ${({ size }) => headingSize[size || 'sm']};
   font-family: ${({ fontFamily }) => fontFamily || 'sans-serif'};
-  color: ${({ color }) => color || 'black'};
+  color: ${({ color }) => color || `${colors.black}`};
   text-indent: ${({ textIndent }) => textIndent};
-  text-align: ${({ textAlign }) => textAlign};
-
-  @media (max-width: 980px) {
-    width: auto;
-    text-align: center;
-  }
+  text-align: ${({ align }) => align || 'center'};
 `;
 
 export default Heading;

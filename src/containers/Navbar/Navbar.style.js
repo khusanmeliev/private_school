@@ -4,10 +4,10 @@ import { mobile, text } from '../../assets/styles/sizes';
 export const Wrapper = styled.div`
   position: fixed;
   width: 100%;
-  height: 90px;
+  height: 80px;
   background: linear-gradient(90deg, rgb(6, 2, 80) 0%, rgb(21, 21, 137) 59%, rgb(2, 109, 130) 100%);
   transition: 0.5s;
-  padding: 0 20px;
+  padding: 0 60px;
   box-sizing: border-box;
 
   a {
