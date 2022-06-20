@@ -50,28 +50,28 @@ const About = () => {
 
         <Flexbox width="50%">
           <StatisticsContainer>
-            <Flexbox width="250px" height="250px" justifyContent="space-around" style={{ fontWeight: 'bold' }}>
+            <Flexbox width="250px" justifyContent="space-around" style={{ fontWeight: 'bold' }}>
               <CircleBox>
                 900
                 <span>+</span>
               </CircleBox>
               <Heading>O`quvchilar soni</Heading>
             </Flexbox>
-            <Flexbox width="250px" height="250px" justifyContent="space-around" style={{ fontWeight: 'bold' }}>
+            <Flexbox width="250px" justifyContent="space-around" style={{ fontWeight: 'bold' }}>
               <CircleBox>
                 80
                 <span>+</span>
               </CircleBox>
               <Heading>IELTS 7.0+</Heading>
             </Flexbox>
-            <Flexbox width="250px" height="250px" justifyContent="space-around" style={{ fontWeight: 'bold' }}>
+            <Flexbox width="250px" justifyContent="space-around" style={{ fontWeight: 'bold' }}>
               <CircleBox>
                 210
                 <span>+</span>
               </CircleBox>
               <Heading>O`qituvchilar soni</Heading>
             </Flexbox>
-            <Flexbox width="250px" height="250px" justifyContent="space-around" style={{ fontWeight: 'bold' }}>
+            <Flexbox width="250px" justifyContent="space-around" style={{ fontWeight: 'bold' }}>
               <CircleBox>
                 50
                 <span>+</span>

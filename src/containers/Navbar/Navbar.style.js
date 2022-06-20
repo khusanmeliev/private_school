@@ -70,24 +70,29 @@ export const Menu = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: '30px';
-  li + li {
-    ${mobile.lg} {
-      margin-top: 12px;
-    }
-  }
 
   ${mobile.lg} {
-    width: 200px;
-    height: fit-content;
-    display: flex;
+    display: ${({ navbarOpen }) => (navbarOpen ? `flex` : 'none')};
     flex-direction: column;
+    background-color: black;
+    opacity: 0.9;
+    width: 100%;
+    height: 100vh;
     position: absolute;
-    border-radius: 8px 0 0 8px;
-    background-color: rgb(21, 21, 137);
     right: 0;
+    left: 0;
     text-align: center;
     gap: 30px;
-    padding: 16px 0;
+    font-size: 20px;
+  }
+`;
+
+export const NavbarButton = styled.span`
+  color: white;
+  font-size: 30px;
+  display: none;
+
+  ${mobile.lg} {
+    display: block;
   }
 `;

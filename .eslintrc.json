@@ -19,7 +19,7 @@
     ],
     "rules": {
         "linebreak-style": "off",
-        "no-console": "error",
-        "prefer-arrow-callback": "error"
+        "prefer-arrow-callback": "error", 
+        "no-unused-vars": "warn"
     }
 }

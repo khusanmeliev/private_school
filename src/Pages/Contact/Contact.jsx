@@ -13,18 +13,19 @@ const Contact = () => {
       <Wrapper>
         <ContactBox>
           <Left>
-            <Logo>Elite School</Logo>
+            <Logo style={{ marginTop: 0 }}>Elite School</Logo>
             <Heading size="sm" textAlign="center" color="#00264b">
               Savollaringiz bormi? Bizga yozing, tezda javob beramiz!
             </Heading>
           </Left>
           <Right>
             <Form>
-              <p>Ismingiz</p>
+              <Text style={{ margin: '4px 0' }}>Ismingiz:</Text>
               <input type="text" />
-              <p>Telefon raqamingiz</p>
-              <input type="number" placeholder="99 999 99 99" id="mobile" />
-              <textarea placeholder="Salom! Sizga qanday yordam bera olamiz?" />
+              <Text style={{ margin: '4px 0' }}>Telefon raqamingiz:</Text>
+              <input type="number" placeholder="90-000-00-00" id="mobile" />
+              <Text style={{ margin: '4px 0' }}>Komment:</Text>
+              <textarea placeholder="Sizga qanday yordam bera olamiz?" />
               <Button
                 bgColor="#fa9722"
                 width="100%"
@@ -45,7 +46,7 @@ const Contact = () => {
       <DownWrapper>
         <Flexbox>
           <Logo>Elite School</Logo>
-          <Heading style={{ margin: 'px', color: 'white' }}>Aloqa</Heading>
+          <Heading style={{ color: 'white' }}>Aloqa</Heading>
           <Heading style={{ margin: '3px', color: 'white' }}>Telefon raqam: 90-000-00-00</Heading>
           <Text style={{ margin: '3px', color: 'white' }}>Email: admin@elitemaktab.uz</Text>
         </Flexbox>
