@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
 export const ContactBox = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
 
   ${mobile.lg} {
@@ -40,6 +40,7 @@ export const Left = styled.div`
 
 export const Right = styled.div`
   width: 50%;
+  padding: 0 20px;
 
   ${mobile.lg} {
     width: 90%;
@@ -78,25 +79,5 @@ export const Form = styled.form`
 
   textarea::placeholder {
     color: grey;
-  }
-`;
-
-export const DownWrapper = styled.div`
-  width: 100%;
-  background-color: #203860;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 50px;
-
-  svg {
-    font-size: 30px;
-    color: white;
-    transition: 0.3s;
-    cursor: pointer;
-    &:hover {
-      margin-top: -15px;
-    }
   }
 `;

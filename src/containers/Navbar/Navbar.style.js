@@ -10,6 +10,10 @@ export const Wrapper = styled.div`
   padding: 0 60px;
   box-sizing: border-box;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
   a {
     text-decoration: none;
   }
@@ -32,12 +36,13 @@ export const Wrapper = styled.div`
 `;
 
 export const Logo = styled.h1`
-  font-size: 36px;
+  width: fit-content;
+  font-size: 24px;
   font-family: 'Marcellus SC', serif;
   color: orange;
 
   ${mobile.lg} {
-    font-size: 30px;
+    font-size: 20px;
   }
 `;
 
