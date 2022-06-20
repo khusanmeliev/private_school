@@ -119,6 +119,7 @@ export const LessonBoxes = styled.div`
 
   ${mobile.lg} {
     flex-direction: column;
+    gap: 20px;
   }
 `;
 
