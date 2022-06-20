@@ -26,16 +26,16 @@ export const ContactBox = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 0;
   }
 `;
 
 export const Left = styled.div`
   width: 50%;
-  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 `;
 
 export const Right = styled.div`
@@ -46,33 +46,38 @@ export const Right = styled.div`
   }
 `;
 
-export const Image = styled.img`
-  width: 250px;
-  margin-top: 40px;
-`;
-
 export const Form = styled.form`
-  width: 90%;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 20px 0;
+  box-sizing: border-box;
 
   input {
-    width: 100%;
-    font-size: 16px;
-    text-indent: 2px;
+    font-size: 14px;
+    text-indent: 6px;
     border: none;
-    border-bottom: 1px solid black;
+    border: 1px solid grey;
+    border-radius: 4px;
     outline: none;
+    height: 40px;
+    font-family: 'Roboto Slab', serif;
   }
+
   textarea {
     height: 120px;
     border: none;
-    border-bottom: 1px solid;
-    font-size: 17px;
-    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    text-indent: 6px;
+    font-size: 14px;
     resize: none;
     outline: none;
+    font-family: 'Roboto Slab', serif;
+  }
+
+  textarea::placeholder {
+    color: grey;
   }
 `;
 
@@ -84,7 +89,6 @@ export const DownWrapper = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 50px;
-  padding: 10px;
 
   svg {
     font-size: 30px;

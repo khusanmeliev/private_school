@@ -57,6 +57,7 @@ export const GoalsWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   flex-wrap: wrap;
   margin-top: 40px;
 `;
@@ -65,7 +66,6 @@ export const GoalsCard = styled.div`
   width: 500px;
   height: 200px;
   background-color: #fa9722;
-  margin: 15px;
   border-radius: 10px;
   display: flex;
   align-items: center;
