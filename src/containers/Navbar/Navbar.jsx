@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import { List, Logo, Menu, Wrapper } from './Navbar.style';
 import { AiOutlineMenu } from 'react-icons/ai';
 import Flexbox from '../../components/Flexbox/Flexbox';
-import './styles.css';
 const Navbar = () => {
   const navbar = useRef(null);
   let prevScrollpos = window.pageYOffset;
@@ -24,7 +23,7 @@ const Navbar = () => {
         <Flexbox flexDirection="row">
           <ul className="ul">
             <input type="checkbox" id="checkbox_toggle" />
-            <label htmlFor="checkbox_toggle" className="hamburger">
+            <label htmlFor="checkbox_toggle">
               <AiOutlineMenu />
             </label>
             <Menu className="menu">

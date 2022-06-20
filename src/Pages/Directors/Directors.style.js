@@ -8,16 +8,17 @@ export const Image = styled.img`
     width: 100%;
     height: auto;
     flex-direction: column;
+    border-radius: 8px 8px 0 0;
   }
 `;
 
 export const Icon = styled.div`
   font-size: 20px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   color: blue;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;

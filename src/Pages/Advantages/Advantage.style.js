@@ -35,6 +35,7 @@ export const Card = styled.div`
   flex-direction: column;
   border: 1px solid #f5f5f5;
   box-shadow: 0 1px 10px rgb(0 0 0 / 11%);
+  color: black;
 
   &:hover {
     background-color: transparent;
@@ -44,14 +45,10 @@ export const Card = styled.div`
 
   span {
     font-size: 45px;
-    ${mobile.lg} {
-      color: white;
-    }
   }
 
   ${mobile.lg} {
     height: auto;
-    color: white;
   }
 `;
 

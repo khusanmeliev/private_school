@@ -10,16 +10,25 @@ export const Wrapper = styled.div`
   padding: 0 60px;
   box-sizing: border-box;
   display: flex;
-
   a {
     text-decoration: none;
   }
-
+  input {
+    display: none;
+  }
+  label {
+    display: none;
+    font-size: 40px;
+    color: white;
+  }
   ${mobile.lg} {
-    ul {
+    input:checked ~ .menu {
+      display: none;
+    }
+    label {
+      display: block;
     }
   }
-  
 `;
 
 export const Logo = styled.h1`
@@ -32,7 +41,20 @@ export const Logo = styled.h1`
   }
 `;
 
-export const List = styled.li``;
+export const List = styled.li`
+  padding: 5px 14px;
+  display: inline;
+  cursor: pointer;
+  color: white;
+  &:hover {
+    transition: 0.3s ease;
+    color: rgb(200, 200, 200);
+    ${mobile.lg} {
+      display: block;
+      transition: 0.3s ease;
+    }
+  }
+`;
 
 export const MenuButton = styled.div`
   display: none;
@@ -45,16 +67,27 @@ export const MenuButton = styled.div`
   }
 `;
 export const Menu = styled.div`
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   gap: '30px';
+  li + li {
+    ${mobile.lg} {
+      margin-top: 12px;
+    }
+  }
+
   ${mobile.lg} {
-    display: none;
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    background-color: #1f1e28;
+    border-radius: 8px 0 0 8px;
+    background-color: rgb(21, 21, 137);
     right: 0;
-    left: 0;
     text-align: center;
+    gap: 30px;
     padding: 16px 0;
   }
 `;
