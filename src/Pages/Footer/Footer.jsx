@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 import Flexbox from '../../components/Flexbox/Flexbox';
-import Heading from '../../components/Heading/Heading';
 import Text from '../../components/Text/Text';
 import { Wrapper } from './Footer.style';
 
