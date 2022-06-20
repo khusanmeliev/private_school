@@ -1,4 +1,27 @@
 import styled from 'styled-components';
+import { mobile } from '../../assets/styles/sizes';
+
+export const Card = styled.div`
+  width: 70%;
+  height: 375px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 11%);
+  border-radius: 8px;
+  margin: 10px;
+
+  @media (max-width: 1100px) {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+  ${mobile.lg} {
+    width: 90%;
+    height: fit-content;
+  }
+`;
 
 export const Image = styled.img`
   width: 40%;
@@ -33,22 +56,12 @@ export const Icon = styled.div`
     height: 60px;
     font-size: 25px;
   }
+  ${mobile.md} {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
-export const Card = styled.div`
-  width: 70%;
-  height: 375px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  box-shadow: 0 1px 10px rgb(0 0 0 / 11%);
-  border-radius: 8px;
-  margin: 10px;
-
-  @media (max-width: 1100px) {
-    width: 90%;
-    height: auto;
-    flex-direction: column;
-  }
+export const Right = styled.div`
+  width: 100%;
 `;

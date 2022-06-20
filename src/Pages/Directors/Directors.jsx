@@ -12,24 +12,24 @@ const Directors = () => {
       {directors.map((info) => (
         <Card key={info.id}>
           <Image src={info.img} alt="" />
-          <Flexbox width="60%" height="375px" justifyContent="flex-start">
+          <Flexbox width="60%" height="fit-content" justifyContent="flex-start">
             <div>
               <Flexbox
                 flexDirection="row"
                 gap="10px"
+                width='200px'
                 style={{
                   borderRadius: '15px',
                 }}
               >
                 <Flexbox style={{ fontSize: '30px' }}>{info.settings}</Flexbox>
-                <Text
+                <Heading
                   style={{
                     fontWeight: '700',
-                    fontSize: '30px',
                   }}
                 >
                   {info.name}
-                </Text>
+                </Heading>
               </Flexbox>
             </div>
             <div>
