@@ -19,7 +19,7 @@ import { about } from '../../mock/about';
 
 const Advantage = () => {
   return (
-    <Flexbox>
+    <Flexbox id="advantages">
       <Heading size="lg">Bizning afzalliklarimiz</Heading>
       <UpLine />
       <AdvantagesCards>
@@ -59,7 +59,7 @@ const Advantage = () => {
           </Flexbox>
         </GoalsCard>
       </GoalsWrapper>
-      <LessonsWrapper marginTop="20px" width="100%">
+      <LessonsWrapper marginTop="20px" width="100%" id="lessons">
         <Heading size="lg">Bizning Darslarimiz</Heading>
         <UpLine />
         <LessonBoxes>

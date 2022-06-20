@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { colors } from '../../assets/styles/colors';
 
 const headingSize = {
   sm: css`
@@ -16,7 +15,7 @@ const headingSize = {
 const Heading = styled.h1`
   ${({ size }) => headingSize[size || 'sm']};
   font-family: ${({ fontFamily }) => fontFamily || `'Charis SIL', serif`};
-  color: ${({ color }) => color || `${colors.black}`};
+  color: ${({ color }) => color};
   text-indent: ${({ textIndent }) => textIndent};
   text-align: ${({ align }) => align || 'center'};
 `;

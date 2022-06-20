@@ -6,7 +6,7 @@ import Flexbox from '../../components/Flexbox/Flexbox';
 
 const Home = () => {
   return (
-    <Flexbox height="80vh" style={{ padding: ' 0 40px', marginTop: '80px' }}>
+    <Flexbox height="80vh" style={{ padding: ' 0 40px', marginTop: '80px' }} id="home">
       <Heading size="lg">
         <span style={{ color: '#f8a408' }}>Elite School </span>
         imkoniyatlar chegaralanmagan makon
@@ -16,7 +16,7 @@ const Home = () => {
         ko`zga ko`ringan, yuqori malakali mutaxassislari faoliyat olib boradi. Maktab ingliz tili va matematikani chuqur
         o`rgatishga ixtisoslashgan.
       </Text>
-      <a href="#">
+      <a href="#contact">
         <Button bgColor="#ffa500" width="200px" height="35px">
           Biz bilan bog`lanish
         </Button>

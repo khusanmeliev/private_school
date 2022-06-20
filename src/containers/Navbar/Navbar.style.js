@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mobile, text } from '../../assets/styles/sizes';
+import { mobile } from '../../assets/styles/sizes';
 
 export const Wrapper = styled.div`
   position: fixed;
@@ -9,14 +9,24 @@ export const Wrapper = styled.div`
   transition: 0.5s;
   padding: 0 60px;
   box-sizing: border-box;
-
+  display: flex;
   a {
     text-decoration: none;
   }
-
+  input {
+    display: none;
+  }
+  label {
+    display: none;
+    font-size: 40px;
+    color: white;
+  }
   ${mobile.lg} {
-    ul {
+    input:checked ~ .menu {
       display: none;
+    }
+    label {
+      display: block;
     }
   }
 `;
@@ -32,17 +42,17 @@ export const Logo = styled.h1`
 `;
 
 export const List = styled.li`
-  width: fit-content;
-  font-size: ${text.md};
-  font-family: serif;
-  color: white;
-  list-style-type: none;
+  padding: 5px 14px;
+  display: inline;
   cursor: pointer;
-
+  color: white;
   &:hover {
-    color: rgb(220, 220, 220);
-    transition: 0.2s;
-    margin-top: -5px;
+    transition: 0.3s ease;
+    color: rgb(200, 200, 200);
+    ${mobile.lg} {
+      display: block;
+      transition: 0.3s ease;
+    }
   }
 `;
 
@@ -54,5 +64,30 @@ export const MenuButton = styled.div`
     color: white;
     font-size: 40px;
     cursor: pointer;
+  }
+`;
+export const Menu = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: '30px';
+  li + li {
+    ${mobile.lg} {
+      margin-top: 12px;
+    }
+  }
+
+  ${mobile.lg} {
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 8px 0 0 8px;
+    background-color: rgb(21, 21, 137);
+    right: 0;
+    text-align: center;
+    gap: 30px;
+    padding: 16px 0;
   }
 `;

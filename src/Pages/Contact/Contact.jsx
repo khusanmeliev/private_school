@@ -9,7 +9,7 @@ import { Wrapper, Form, DownWrapper, ContactBox, Left, Right } from './Contact.s
 
 const Contact = () => {
   return (
-    <Flexbox>
+    <Flexbox id="contact">
       <Wrapper>
         <ContactBox>
           <Left>
@@ -23,7 +23,7 @@ const Contact = () => {
               <p>Ismingiz</p>
               <input type="text" />
               <p>Telefon raqamingiz</p>
-              <input type="number" placeholder="+998 (__) ___ __ __" id="mobile" />
+              <input type="number" placeholder="99 999 99 99" id="mobile" />
               <textarea placeholder="Salom! Sizga qanday yordam bera olamiz?" />
               <Button
                 bgColor="#fa9722"

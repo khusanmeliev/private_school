@@ -6,7 +6,7 @@ import { CircleBox, Navlist, StatisticsContainer, Wrapper } from './About.style'
 
 const About = () => {
   return (
-    <Wrapper>
+    <Wrapper id="about">
       <Flexbox flexWrap="wrap" flexDirection="row">
         <Flexbox>
           <Heading size="lg">Biz haqimizda qisqacha!</Heading>
@@ -76,7 +76,7 @@ const About = () => {
                 50
                 <span>+</span>
               </CircleBox>
-              <Heading style={{ fontSize: '22px' }}>Davlat granti asosida o`qishga kirganlar</Heading>
+              <Heading style={{ fontSize: '22px' }}>Davlat granti</Heading>
             </Flexbox>
           </StatisticsContainer>
         </Flexbox>

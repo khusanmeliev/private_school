@@ -7,23 +7,29 @@ import { Card, Icon, Image } from './Directors.style';
 
 const Directors = () => {
   return (
-    <Flexbox>
+    <Flexbox id="directors">
       <Heading size="lg">Maktabimiz direktorlari haqida ma`lumot!</Heading>
       {directors.map((info) => (
         <Card key={info.id}>
           <Image src={info.img} alt="" />
-          <Flexbox width="60%" height="520px">
+          <Flexbox width="60%" height="fit-content" justifyContent="flex-start">
             <div>
-              <Flexbox flexDirection="row" gap="10px" width="100%" style={{ borderRadius: '15px' }}>
+              <Flexbox
+                flexDirection="row"
+                gap="10px"
+                width='200px'
+                style={{
+                  borderRadius: '15px',
+                }}
+              >
                 <Flexbox style={{ fontSize: '30px' }}>{info.settings}</Flexbox>
-                <Text
+                <Heading
                   style={{
                     fontWeight: '700',
-                    fontSize: '30px',
                   }}
                 >
                   {info.name}
-                </Text>
+                </Heading>
               </Flexbox>
             </div>
             <div>
