@@ -1,12 +1,18 @@
 import styled from 'styled-components';
 import { mobile } from '../../assets/styles/sizes';
 
+export const Wrapper = styled.div`
+  padding: 20px 0;
+`;
+
 export const UpLine = styled.div`
   width: 90px;
   height: 4px;
   background-color: #003cc8;
   background-image: -webkit-linear-gradient(left, #003cc8, #00d0fc);
   margin-top: 10px;
+  display: block;
+  margin: 0 auto;
 `;
 
 export const AdvantagesCards = styled.div`

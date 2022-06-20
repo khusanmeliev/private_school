@@ -2,30 +2,32 @@ import styled from 'styled-components';
 import { mobile } from '../../assets/styles/sizes';
 
 export const Wrapper = styled.div`
-  width: 90%;
-  height: 400px;
-  background-color: white;
-  margin-top: 60px;
-  background-color: white;
-  box-shadow: 0 1px 10px rgb(0 0 0 / 11%);
-  display: block;
-  margin: 0 auto;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   @media (max-width: 1170px) {
     height: auto;
-    flex-direction: column;
   }
 `;
 
 export const ContactBox = styled.div`
-  width: 100%;
+  width: 90%;
+  height: fit-content;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 11%);
+  margin-top: 20px;
+
   display: flex;
   justify-content: center;
   flex-direction: row;
+  padding: 20px 0;
 
   ${mobile.lg} {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 20px 0;
   }
 `;
@@ -51,7 +53,6 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 20px 0;
   box-sizing: border-box;
 
   input {

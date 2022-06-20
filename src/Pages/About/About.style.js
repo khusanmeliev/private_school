@@ -3,7 +3,10 @@ import { colors } from '../../assets/styles/colors';
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Navlist = styled.ul`

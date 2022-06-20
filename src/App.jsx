@@ -13,9 +13,7 @@ const App = () => {
     <GlobalStyle>
       <Navbar />
       <Home />
-      <hr />
       <About />
-      <hr />
       <Lesson />
       <hr />
       <Directors />
