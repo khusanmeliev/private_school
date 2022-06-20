@@ -49,17 +49,17 @@ const Directors = () => {
             <div>
               <Flexbox flexDirection="row" gap="10px" height="100px" justifyContent="flex-start">
                 <Icon>
-                  <a style={{ color: 'blue' }} href="" target="blank">
+                  <a style={{ color: 'grey' }} href="" target="blank">
                     {info.facebook_icon}
                   </a>
                 </Icon>
                 <Icon>
-                  <a style={{ color: 'blue' }} href="" target="blank">
+                  <a style={{ color: 'grey' }} href="" target="blank">
                     {info.telegram_icon}
                   </a>
                 </Icon>
                 <Icon>
-                  <a style={{ color: 'blue' }} href="" target="blank">
+                  <a style={{ color: 'grey' }} href="" target="blank">
                     {info.instagram_icon}
                   </a>
                 </Icon>

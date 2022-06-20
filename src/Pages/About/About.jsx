@@ -52,28 +52,28 @@ const About = () => {
           <StatisticsContainer>
             <Flexbox width="250px" justifyContent="space-around" style={{ fontWeight: 'bold' }}>
               <CircleBox>
-                900
+                160
                 <span>+</span>
               </CircleBox>
               <Heading>O`quvchilar soni</Heading>
             </Flexbox>
             <Flexbox width="250px" justifyContent="space-around" style={{ fontWeight: 'bold' }}>
               <CircleBox>
-                80
+                12
                 <span>+</span>
               </CircleBox>
               <Heading>IELTS 7.0+</Heading>
             </Flexbox>
             <Flexbox width="250px" justifyContent="space-around" style={{ fontWeight: 'bold' }}>
               <CircleBox>
-                210
+                16
                 <span>+</span>
               </CircleBox>
               <Heading>O`qituvchilar soni</Heading>
             </Flexbox>
             <Flexbox width="250px" justifyContent="space-around" style={{ fontWeight: 'bold' }}>
               <CircleBox>
-                50
+                10
                 <span>+</span>
               </CircleBox>
               <Heading style={{ fontSize: '22px' }}>Davlat granti</Heading>
