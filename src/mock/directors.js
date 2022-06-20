@@ -1,7 +1,3 @@
-import React from 'react';
-import { MdEmail } from 'react-icons/md';
-import { GrUserSettings } from 'react-icons/gr';
-import { FaPhone, FaMapMarkerAlt, FaFacebookF, FaTelegramPlane, FaInstagram } from 'react-icons/fa';
 import MarufIsoqulov from '../assets/img/maruf_isoqulov.jpg';
 
 export const directors = [
