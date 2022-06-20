@@ -7,7 +7,7 @@ import { Card, Icon, Image } from './Directors.style';
 
 const Directors = () => {
   return (
-    <Flexbox>
+    <Flexbox id="directors">
       <Heading size="lg">Maktabimiz direktorlari haqida ma`lumot!</Heading>
       {directors.map((info) => (
         <Card key={info.id}>

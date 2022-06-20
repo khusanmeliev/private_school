@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mobile, text } from '../../assets/styles/sizes';
+import { mobile } from '../../assets/styles/sizes';
 
 export const Wrapper = styled.div`
   position: fixed;
@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
   transition: 0.5s;
   padding: 0 60px;
   box-sizing: border-box;
+  display: flex;
 
   a {
     text-decoration: none;
@@ -16,9 +17,9 @@ export const Wrapper = styled.div`
 
   ${mobile.lg} {
     ul {
-      display: none;
     }
   }
+  
 `;
 
 export const Logo = styled.h1`
@@ -31,20 +32,7 @@ export const Logo = styled.h1`
   }
 `;
 
-export const List = styled.li`
-  width: fit-content;
-  font-size: ${text.md};
-  font-family: serif;
-  color: white;
-  list-style-type: none;
-  cursor: pointer;
-
-  &:hover {
-    color: rgb(220, 220, 220);
-    transition: 0.2s;
-    margin-top: -5px;
-  }
-`;
+export const List = styled.li``;
 
 export const MenuButton = styled.div`
   display: none;
@@ -54,5 +42,19 @@ export const MenuButton = styled.div`
     color: white;
     font-size: 40px;
     cursor: pointer;
+  }
+`;
+export const Menu = styled.div`
+  flex-direction: row;
+  justify-content: space-around;
+  gap: '30px';
+  ${mobile.lg} {
+    display: none;
+    position: absolute;
+    background-color: #1f1e28;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
   }
 `;

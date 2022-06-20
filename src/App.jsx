@@ -6,7 +6,6 @@ import { GlobalStyle } from './Global.style';
 import Directors from './Pages/Directors/Directors';
 import Contact from './Pages/Contact/Contact';
 import Lesson from './Pages/Advantages/Advantage';
-
 function App() {
   return (
     <GlobalStyle>

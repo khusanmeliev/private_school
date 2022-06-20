@@ -44,11 +44,14 @@ export const Card = styled.div`
 
   span {
     font-size: 45px;
-    color: blue;
+    ${mobile.lg} {
+      color: white;
+    }
   }
 
   ${mobile.lg} {
     height: auto;
+    color: white;
   }
 `;
 

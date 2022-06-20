@@ -6,7 +6,7 @@ import Flexbox from '../../components/Flexbox/Flexbox';
 
 const Home = () => {
   return (
-    <Flexbox height="80vh" style={{ padding: ' 0 40px', marginTop: '80px' }}>
+    <Flexbox height="80vh" style={{ padding: ' 0 40px', marginTop: '80px' }} id="home">
       <Heading size="lg">
         <span style={{ color: '#f8a408' }}>Elite School </span>
         imkoniyatlar chegaralanmagan makon

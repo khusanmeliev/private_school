@@ -4,6 +4,11 @@ export const Image = styled.img`
   width: 40%;
   height: 100%;
   border-radius: 8px 0 0 8px;
+  @media (max-width: 1100px) {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
 `;
 
 export const Icon = styled.div`
@@ -21,6 +26,12 @@ export const Icon = styled.div`
     transition: 1s;
     cursor: pointer;
   }
+
+  @media (max-width: 1100px) {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+  }
 `;
 
 export const Card = styled.div`
@@ -33,4 +44,10 @@ export const Card = styled.div`
   box-shadow: 0 1px 10px rgb(0 0 0 / 11%);
   border-radius: 8px;
   margin: 10px;
+
+  @media (max-width: 1100px) {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
 `;

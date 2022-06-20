@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { colors } from '../../assets/styles/colors';
 import { text } from '../../assets/styles/sizes';
 
 const textSize = {
@@ -16,7 +15,7 @@ const textSize = {
 
 const Text = styled.p`
   ${({ size }) => textSize[size || 'md']};
-  color: ${({ color }) => color || `${colors.grey}`};
+  color: ${({ color }) => color };
   text-align: ${({ align }) => align || 'start'};
   font-family: 'Roboto Slab', serif;
 `;
