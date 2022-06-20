@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 import { mobile } from '../../assets/styles/sizes';
 
+export const Wrapper = styled.div`
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const Card = styled.div`
   width: 70%;
   height: 375px;
@@ -35,11 +43,11 @@ export const Image = styled.img`
   }
 `;
 
-export const Icon = styled.div`
+export const Icon = styled.a`
   font-size: 20px;
   width: 30px;
   height: 30px;
-  color: blue;
+  color: grey;
   background-color: white;
   border-radius: 50px;
   display: flex;

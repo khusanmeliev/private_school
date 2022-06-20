@@ -3,72 +3,67 @@ import Flexbox from '../../components/Flexbox/Flexbox';
 import Heading from '../../components/Heading/Heading';
 import Text from '../../components/Text/Text';
 import { directors } from '../../mock/directors';
-import { Card, Icon, Image } from './Directors.style';
+import { Card, Icon, Image, Wrapper } from './Directors.style';
+import { MdEmail } from 'react-icons/md';
+import { FaPhone, FaMapMarkerAlt, FaFacebookF, FaTelegramPlane, FaInstagram } from 'react-icons/fa';
 
 const Directors = () => {
   return (
-    <Flexbox id="directors">
+    <Wrapper id="directors">
       <Heading size="lg">Maktabimiz direktorlari haqida ma`lumot!</Heading>
-      {directors.map((info) => (
-        <Card key={info.id}>
-          <Image src={info.img} alt="" />
+      {directors.map((director) => (
+        <Card key={director.id}>
+          <Image src={director.img} alt="" />
           <Flexbox width="60%" height="fit-content" justifyContent="flex-start">
             <div>
               <Flexbox
                 flexDirection="row"
                 gap="10px"
-                width='200px'
+                width="200px"
                 style={{
                   borderRadius: '15px',
                 }}
               >
-                <Flexbox style={{ fontSize: '30px' }}>{info.settings}</Flexbox>
                 <Heading
                   style={{
                     fontWeight: '700',
                   }}
                 >
-                  {info.name}
+                  {director.name}
                 </Heading>
               </Flexbox>
             </div>
             <div>
               <Flexbox flexDirection="row" gap="10px" justifyContent="flex-start">
-                {info.email_icon}
-                <Text>{info.email}</Text>
+                <MdEmail />
+                <Text>{director.contacts.email}</Text>
               </Flexbox>
               <Flexbox flexDirection="row" gap="10px" justifyContent="flex-start">
-                {info.phone_icon}
-                <Text>{info.phone}</Text>
+                <FaPhone />
+                <Text>{director.contacts.phone}</Text>
               </Flexbox>
               <Flexbox flexDirection="row" gap="10px" justifyContent="flex-start">
-                {info.address_icon}
-                <Text>{info.address}</Text>
+                <FaMapMarkerAlt />
+                <Text>{director.address}</Text>
               </Flexbox>
             </div>
             <div>
               <Flexbox flexDirection="row" gap="10px" height="100px" justifyContent="flex-start">
-                <Icon>
-                  <a style={{ color: 'grey' }} href="" target="blank">
-                    {info.facebook_icon}
-                  </a>
+                <Icon href="" target="_blank" rel="noreferrer">
+                  <FaFacebookF />
                 </Icon>
-                <Icon>
-                  <a style={{ color: 'grey' }} href="" target="blank">
-                    {info.telegram_icon}
-                  </a>
+                <Icon href={`https://t.me/${director.contacts.telegram}`} target="_blank" rel="noreferrer">
+                  <FaTelegramPlane />
                 </Icon>
-                <Icon>
-                  <a style={{ color: 'grey' }} href="" target="blank">
-                    {info.instagram_icon}
-                  </a>
+                <Icon href="" target="_blank" rel="noreferrer">
+                  <FaInstagram />
                 </Icon>
               </Flexbox>
             </div>
           </Flexbox>
         </Card>
       ))}
-    </Flexbox>
+    </Wrapper>
   );
 };
 
