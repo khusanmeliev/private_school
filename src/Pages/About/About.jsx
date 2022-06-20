@@ -38,11 +38,11 @@ const About = () => {
             </li>
             <li>
               <TiTick />
-              Ta`lim tili - rus tili.
+              Ta`lim tili - o`zbek tili.
             </li>
           </Navlist>
           <Heading size="md" align="center">
-            Elite School - We teach better!
+            Elite Academic School - We teach better!
           </Heading>
         </Flexbox>
 

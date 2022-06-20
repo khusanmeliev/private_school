@@ -8,7 +8,7 @@ export const about = [
     id: 1,
     icon: <BiTrendingUp />,
     title: 'TAYYORLOV',
-    text: 'Elite School xususiy maktabi abituriyentlarni oliy o`quv yurtlariga tayyorlash va chet tillarini o`qitishda katta tajribaga ega, chunki maktab Ravon Muloqot o`quv markazi bazasida faoliyat olib boradi.',
+    text: 'Elite Academic School xususiy maktabi abituriyentlarni oliy o`quv yurtlariga tayyorlash va chet tillarini o`qitishda katta tajribaga ega, chunki maktab Ravon Muloqot va Prime Study o`quv markazlarining mushtarak maqsadlari hamrohligida faoliyat olib boradi.',
   },
   {
     id: 2,
@@ -21,13 +21,13 @@ export const about = [
     id: 3,
     icon: <BiShoppingBag />,
     title: 'NARXLAR',
-    text: `Elite School - xususiy maktabi narxlar borasida doimo odilona siyosat yuritadi, bizning narxlarimiz ta’lim bozoridagi narxlar bilan solishtirganda doimo optimalligini saqlab qoladi, bundan tashqari maktabimizda doimiy ravishda chegirmalar va bonuslar tizimi yaratilgan.`,
+    text: `Elite Academic School - xususiy maktabi narxlar borasida doimo odilona siyosat yuritadi, bizning narxlarimiz ta’lim bozoridagi narxlar bilan solishtirganda doimo optimalligini saqlab qoladi, bundan tashqari maktabimizda doimiy ravishda chegirmalar va bonuslar tizimi yaratilgan.`,
   },
   {
     id: 4,
     icon: <FaMapMarkerAlt />,
     title: 'FILIALLAR',
-    text: 'Hozirgi paytda Elite School maktabining bitta filiali faoliyatini boshladi: Mo’ljal: Urgut shahri, markaziy park yonida. Maktabda asosiy fanlardan tashqari ingliz tili va matematika chuqur o’rgatiladi. Maktabimizda ikkinchi xorijiy til – ingliz tili.',
+    text: 'Hozirgi paytda Elite Academic School maktabining bitta filiali faoliyatini boshladi: Mo’ljal: Urgut markaziy istirohat bog`i. Maktabda asosiy fanlardan tashqari ingliz tili va matematika chuqur o’rgatiladi. Maktabimizda ikkinchi xorijiy til – ingliz tili.',
   },
   {
     id: 5,

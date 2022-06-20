@@ -1,12 +1,14 @@
 import React from 'react';
+import { GlobalStyle } from './Global.style';
 import Navbar from './containers/Navbar/Navbar';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
-import { GlobalStyle } from './Global.style';
 import Directors from './Pages/Directors/Directors';
 import Contact from './Pages/Contact/Contact';
 import Lesson from './Pages/Advantages/Advantage';
-function App() {
+import Footer from './Pages/Footer/Footer';
+
+const App = () => {
   return (
     <GlobalStyle>
       <Navbar />
@@ -19,8 +21,9 @@ function App() {
       <Directors />
       <hr />
       <Contact />
+      <Footer />
     </GlobalStyle>
   );
-}
+};
 
 export default App;

@@ -20,35 +20,35 @@ const Navbar = () => {
 
   return (
     <Wrapper ref={navbar}>
-      <Flexbox flexDirection="row" width="100%" height="100%" justifyContent="space-between">
-        <Logo>Elite School</Logo>
-        <Flexbox flexDirection="row">
-          <ul>
-            <NavbarButton onClick={() => setNavbarOpen(!navbarOpen)}>
-              <AiOutlineMenu />
-            </NavbarButton>
-            <Menu navbarOpen={navbarOpen}>
-              <a href="#home">
-                <List>Bosh sahifa</List>
-              </a>
-              <a href="#about">
-                <List>Biz haqimizda</List>
-              </a>
-              <a href="#advantages">
-                <List>Bizning afzalliklarimiz</List>
-              </a>
-              <a href="#lessons">
-                <List>Darslar</List>
-              </a>
-              <a href="#directors">
-                <List>Direktorlar</List>
-              </a>
-              <a href="#contact">
-                <List>Bog`lanish</List>
-              </a>
-            </Menu>
-          </ul>
-        </Flexbox>
+      <Logo>
+        Elite <span style={{ color: 'white' }}> School </span>
+      </Logo>
+      <Flexbox flexDirection="row">
+        <ul>
+          <NavbarButton onClick={() => setNavbarOpen(!navbarOpen)}>
+            <AiOutlineMenu />
+          </NavbarButton>
+          <Menu navbarOpen={navbarOpen}>
+            <a href="#home">
+              <List>Bosh sahifa</List>
+            </a>
+            <a href="#about">
+              <List>Biz haqimizda</List>
+            </a>
+            <a href="#advantages">
+              <List>Bizning afzalliklarimiz</List>
+            </a>
+            <a href="#lessons">
+              <List>Darslar</List>
+            </a>
+            <a href="#directors">
+              <List>Direktorlar</List>
+            </a>
+            <a href="#contact">
+              <List>Bog`lanish</List>
+            </a>
+          </Menu>
+        </ul>
       </Flexbox>
     </Wrapper>
   );
