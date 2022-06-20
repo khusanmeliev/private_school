@@ -8,6 +8,7 @@ import { Wrapper, Form, ContactBox, Left, Right } from './Contact.style';
 const Contact = () => {
   return (
     <Wrapper id="contact">
+      <Heading>Kontakt</Heading>
       <ContactBox>
         <Left>
           <Logo style={{ marginTop: 0 }}>Elite School</Logo>

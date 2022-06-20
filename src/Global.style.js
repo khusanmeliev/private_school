@@ -6,7 +6,7 @@ export const GlobalStyle = styled.div`
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  gap: 30px;
+  gap: 10px;
 
   hr {
     width: 60%;

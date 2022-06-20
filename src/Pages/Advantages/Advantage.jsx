@@ -11,6 +11,7 @@ import {
   PriceLabel,
   LessonsWrapper,
   GoalsWrapper,
+  Wrapper,
 } from './Advantage.style';
 import Heading from '../../components/Heading/Heading';
 import Text from '../../components/Text/Text';
@@ -19,7 +20,7 @@ import { about } from '../../mock/about';
 
 const Advantage = () => {
   return (
-    <Flexbox id="advantages">
+    <Wrapper id="advantages">
       <Heading size="lg">Bizning afzalliklarimiz</Heading>
       <UpLine />
       <AdvantagesCards>
@@ -89,7 +90,7 @@ const Advantage = () => {
           </LessonBox>
         </LessonBoxes>
       </LessonsWrapper>
-    </Flexbox>
+    </Wrapper>
   );
 };
 

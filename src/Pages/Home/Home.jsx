@@ -2,12 +2,12 @@ import React from 'react';
 import Button from '../../components/Button/Button';
 import Heading from '../../components/Heading/Heading';
 import Text from '../../components/Text/Text';
-import Flexbox from '../../components/Flexbox/Flexbox';
 import EliteLogo from '../../assets/img/ELITA.png';
+import { Wrapper } from './Home.style';
 
 const Home = () => {
   return (
-    <Flexbox height="auto" style={{ padding: ' 20px 40px', marginTop: '80px', backgroundColor: '#fbfbfb' }} id="home">
+    <Wrapper height="auto" id="home">
       <Heading>
         <span style={{ color: '#f8a408' }}>Elite Academic School </span>
         imkoniyatlar chegaralanmagan makon
@@ -23,7 +23,7 @@ const Home = () => {
           Biz bilan bog`lanish
         </Button>
       </a>
-    </Flexbox>
+    </Wrapper>
   );
 };
 

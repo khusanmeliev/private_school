@@ -37,12 +37,12 @@ export const Wrapper = styled.div`
 
 export const Logo = styled.h1`
   width: fit-content;
-  font-size: 24px;
+  font-size: 28px;
   font-family: 'Marcellus SC', serif;
   color: orange;
 
   ${mobile.lg} {
-    font-size: 20px;
+    font-size: 24px;
   }
 `;
 
