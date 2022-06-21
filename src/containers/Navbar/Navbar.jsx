@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <Wrapper ref={navbar}>
       <Logo>
-        Elite <span style={{ color: 'white' }}> School </span>
+        Elite <span> Academic School </span>
       </Logo>
       <Flexbox flexDirection="row">
         <ul>

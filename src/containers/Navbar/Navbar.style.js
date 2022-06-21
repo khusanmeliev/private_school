@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import { colors } from '../../assets/styles/colors';
 import { mobile } from '../../assets/styles/sizes';
 
 export const Wrapper = styled.div`
   position: fixed;
   width: 100%;
   height: 80px;
-  background: linear-gradient(90deg, rgb(6, 2, 80) 0%, rgb(21, 21, 137) 59%, rgb(2, 109, 130) 100%);
+  background: ${colors.navbar};
   transition: 0.5s;
   padding: 0 60px;
   box-sizing: border-box;
@@ -40,6 +41,13 @@ export const Logo = styled.h1`
   font-size: 28px;
   font-family: 'Marcellus SC', serif;
   color: orange;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: white;
+    font-size: 14px;
+  }
 
   ${mobile.lg} {
     font-size: 24px;
