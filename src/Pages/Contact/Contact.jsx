@@ -11,7 +11,7 @@ const Contact = () => {
       <Heading>Kontakt</Heading>
       <ContactBox>
         <Left>
-          <Logo style={{ marginTop: 0 }}>Elite School</Logo>
+          <Logo style={{ marginTop: 0 }}>Elita Akademik Maktabi</Logo>
           <Heading size="sm" textAlign="center" color="#00264b">
             Savollaringiz bormi? Bizga yozing, tezda javob beramiz!
           </Heading>
