@@ -9,7 +9,7 @@ export const directors = [
     name: 'Gaffarov Mahmud',
     address: 'Samarqand viloyati, Urgut tumani',
     contacts: {
-      email: 'google@gmail.com',
+      email: 'slave_mg86@mail.ru',
       phone: '+998(97)-395-23-78',
       telegram: 'slaveMG',
     },
