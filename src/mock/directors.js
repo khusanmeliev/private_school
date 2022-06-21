@@ -6,12 +6,12 @@ export const directors = [
     id: 1,
     role: 'Direktor',
     img: MahmudGaffarov,
-    name: 'G`affarov Mahmud',
+    name: 'Gaffarov Mahmud',
     address: 'Samarqand viloyati, Urgut tumani',
     contacts: {
       email: 'google@gmail.com',
       phone: '+998(97)-395-23-78',
-      telegram: 'RMUZHEAD',
+      telegram: 'slaveMG',
     },
   },
   {
