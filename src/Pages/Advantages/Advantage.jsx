@@ -38,7 +38,7 @@ const Advantage = () => {
             <PriceLabel>Bepul</PriceLabel>
             <ul>
               <li>Darslarning davomiyligi haftasiga 1 marta 45 minut</li>
-              <li>Dars davomiyligi: 5-9 sinflar</li>
+              <li>Dars davomiyligi: 1 - 4 sinflar</li>
               <li>Kurs to`lovlari maktab to`lovi ichiga kiritilgan</li>
             </ul>
             <Button width="95%" height="45px" bgColor="#000c3f">

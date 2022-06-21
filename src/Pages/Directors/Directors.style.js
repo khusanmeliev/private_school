@@ -20,27 +20,35 @@ export const Card = styled.div`
   border-radius: 8px;
   margin: 10px;
 
-  @media (max-width: 1100px) {
-    width: 90%;
-    height: auto;
-    flex-direction: column;
-  }
   ${mobile.lg} {
     width: 90%;
     height: fit-content;
+    flex-direction: column;
   }
 `;
 
-export const Image = styled.img`
-  width: 40%;
-  height: 100%;
+export const CardImage = styled.img`
+  width: 300px;
+  height: inherit;
+  object-fit: cover;
   border-radius: 8px 0 0 8px;
-  @media (max-width: 1100px) {
+
+  ${mobile.lg} {
     width: 100%;
-    height: auto;
+    height: 400px;
     flex-direction: column;
     border-radius: 8px 8px 0 0;
   }
+`;
+
+export const CardDetails = styled.div`
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
 `;
 
 export const Icon = styled.a`

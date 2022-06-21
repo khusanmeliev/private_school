@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { mobile } from '../../assets/styles/sizes';
 
 const headingSize = {
   sm: css`
@@ -18,6 +19,10 @@ const Heading = styled.h1`
   color: ${({ color }) => color};
   text-indent: ${({ textIndent }) => textIndent};
   text-align: ${({ align }) => align || 'center'};
+
+  ${mobile.lg} {
+    font-size: 24px;
+  }
 `;
 
 export default Heading;

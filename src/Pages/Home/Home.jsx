@@ -7,7 +7,7 @@ import { Wrapper } from './Home.style';
 
 const Home = () => {
   return (
-    <Wrapper height="auto" id="home">
+    <Wrapper id="home">
       <Heading>
         <span style={{ color: '#f8a408' }}>Elite Academic School </span>
         imkoniyatlar chegaralanmagan makon

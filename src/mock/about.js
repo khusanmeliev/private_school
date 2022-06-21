@@ -33,7 +33,7 @@ export const about = [
     id: 5,
     icon: <BiBus />,
     title: 'MAKTAB AVTOBUSI    ',
-    text: 'Maktab avtobusi o’quvchilarni uyiga eng yaqin bo’lgan bekatdan olib ketib, o’qishdan so’ng qaytarib olib keladi. Avtobus xizmatining afzalligi shundaki, bunda ota-ona bolani maktabga olib borish va olib kelish tashvishidan qutuladi va ko’proq o’ziga, oilasiga vaqt ajratish imkoniyatiga ega bo’ladi. Ayniqsa ishli ota-onalar uchun bu juda qulay. Avtobus xizmati uchun alohida haq to’lanadi, 2022-2023 o’quv yili uchun avtobus xizmati narxi 300 ming so’m etib belgilangan.',
+    text: 'Maktab avtobusi o’quvchilarni joyidan olib ketib, o’qishdan so’ng qaytarib olib keladi. Avtobus xizmatining afzalligi shundaki, bunda ota-ona bolani maktabga olib borish va olib kelish tashvishidan qutuladi. Ayniqsa ishli ota-onalar uchun bu juda qulay. Avtobus xizmati uchun alohida haq to’lanadi, 2022-2023 o’quv yili uchun avtobus xizmati narxi 300 ming so’m etib belgilangan.',
   },
 
   {
