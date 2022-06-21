@@ -3,7 +3,7 @@ import Flexbox from '../../components/Flexbox/Flexbox';
 import Heading from '../../components/Heading/Heading';
 import Text from '../../components/Text/Text';
 import { directors } from '../../mock/directors';
-import { Card, Icon, Image, Wrapper } from './Directors.style';
+import { Card, CardDetails, CardImage, Icon, Wrapper } from './Directors.style';
 import { MdEmail } from 'react-icons/md';
 import { FaPhone, FaMapMarkerAlt, FaFacebookF, FaTelegramPlane, FaInstagram } from 'react-icons/fa';
 
@@ -13,26 +13,12 @@ const Directors = () => {
       <Heading size="lg">Maktabimiz direktorlari haqida ma`lumot!</Heading>
       {directors.map((director) => (
         <Card key={director.id}>
-          <Image src={director.img} alt="" />
-          <Flexbox width="60%" height="fit-content" justifyContent="flex-start">
-            <div>
-              <Flexbox
-                flexDirection="row"
-                gap="10px"
-                width="200px"
-                style={{
-                  borderRadius: '15px',
-                }}
-              >
-                <Heading
-                  style={{
-                    fontWeight: '700',
-                  }}
-                >
-                  {director.name}
-                </Heading>
-              </Flexbox>
-            </div>
+          <CardImage src={director.img} alt="" />
+          <CardDetails>
+            <Heading size="sm" color="grey">
+              {director.role}
+            </Heading>
+            <Heading style={{ margin: 0 }}>{director.name}</Heading>
             <div>
               <Flexbox flexDirection="row" gap="10px" justifyContent="flex-start">
                 <MdEmail />
@@ -60,7 +46,7 @@ const Directors = () => {
                 </Icon>
               </Flexbox>
             </div>
-          </Flexbox>
+          </CardDetails>
         </Card>
       ))}
     </Wrapper>

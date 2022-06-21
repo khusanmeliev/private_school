@@ -1,25 +1,28 @@
 import MarufIsoqulov from '../assets/img/maruf_isoqulov.jpg';
+import MahmudGaffarov from '../assets/img/mahmud_gaffarov.jpg';
 
 export const directors = [
   {
     id: 1,
-    img: 'https://media.istockphoto.com/photos/the-school-district-supervisor-in-her-office-picture-id1142260831?k=20&m=1142260831&s=612x612&w=0&h=OhRsummYVZKa3GiOF_del6o_hteF9SyHZMvOZ3_VKLE=',
-    name: 'Director name',
+    role: 'Direktor',
+    img: MahmudGaffarov,
+    name: 'G`affarov Mahmud',
     address: 'Samarqand viloyati, Urgut tumani',
     contacts: {
       email: 'google@gmail.com',
-      phone: '+998YYXXXXXXX',
+      phone: '+998(97)-395-23-78',
       telegram: 'RMUZHEAD',
     },
   },
   {
     id: 2,
     img: MarufIsoqulov,
+    role: 'Menejer',
     name: 'Ma`ruf Isoqulov',
     address: 'Samarqand viloyati, Urgut tumani',
     contacts: {
-      email: 'google@gmail.com',
-      phone: '+998YYXXXXXXX',
+      email: 'm.isoqulov@mail.ru',
+      phone: '+998(99)-333-66-16',
       telegram: 'RMUZHEAD',
     },
   },
