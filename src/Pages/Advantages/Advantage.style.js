@@ -6,10 +6,10 @@ export const Wrapper = styled.div`
 `;
 
 export const UpLine = styled.div`
-  width: 90px;
-  height: 4px;
-  background-color: #003cc8;
-  background-image: -webkit-linear-gradient(left, #003cc8, #00d0fc);
+  width: 200px;
+  border: 0; 
+  height: 2px; 
+  background-image: linear-gradient(to right, #f0f0f0, #3b13b0, #3b13b0,#f0f0f0);
   margin-top: 10px;
   display: block;
   margin: 0 auto;

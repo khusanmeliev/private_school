@@ -9,8 +9,9 @@ export const GlobalStyle = styled.div`
   gap: 10px;
 
   hr {
-    width: 60%;
-    border: 2px solid blue;
-    border-radius: 10px;
+    width: 80%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, #f0f0f0, #3b13b0, #3b13b0,#f0f0f0);
   }
 `;
