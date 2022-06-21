@@ -51,6 +51,7 @@ export const Logo = styled.h1`
 
   ${mobile.lg} {
     font-size: 24px;
+    text-align: center;
   }
 `;
 
