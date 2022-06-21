@@ -7,6 +7,8 @@ import Directors from './Pages/Directors/Directors';
 import Contact from './Pages/Contact/Contact';
 import Lesson from './Pages/Advantages/Advantage';
 import Footer from './Pages/Footer/Footer';
+import Meals from './Pages/Meals/Meals';
+import Goals from './Pages/Goals/Goals';
 
 const App = () => {
   return (
@@ -16,6 +18,9 @@ const App = () => {
       <About />
       <Lesson />
       <hr />
+      <Meals />
+      <hr />
+      <Goals />
       <Directors />
       <hr />
       <Contact />

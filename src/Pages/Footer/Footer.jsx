@@ -23,7 +23,7 @@ const Footer = () => {
           <FaYoutube />
         </Flexbox>
       </Flexbox>
-      <Text color="white">Powered by SoftTech</Text>
+      <Text color="white">Powered by ________</Text>
     </Wrapper>
   );
 };
