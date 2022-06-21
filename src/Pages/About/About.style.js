@@ -1,12 +1,30 @@
 import styled from 'styled-components';
 import { colors } from '../../assets/styles/colors';
+import { mobile } from '../../assets/styles/sizes';
 
 export const Wrapper = styled.div`
   width: 100%;
   padding: 20px 0;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
+  ${mobile.lg} {
+    flex-direction: column;
+    width: 100%;
+  }
+`;
+
+export const AboutUsBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+
+  ${mobile.lg} {
+    width: 90%;
+  }
 `;
 
 export const Navlist = styled.ul`
@@ -15,7 +33,7 @@ export const Navlist = styled.ul`
   gap: 10px;
 
   svg {
-    margin-right: 10px;
+    margin-right: 8px;
   }
 
   li {
@@ -27,11 +45,14 @@ export const Navlist = styled.ul`
 // <------------------------------->
 
 export const StatisticsContainer = styled.div`
-  width: 90%;
+  width: 50%;
   height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  padding-top: 30px;
 `;
 
 export const CircleBox = styled.div`

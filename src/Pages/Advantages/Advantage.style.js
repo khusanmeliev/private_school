@@ -7,9 +7,9 @@ export const Wrapper = styled.div`
 
 export const UpLine = styled.div`
   width: 200px;
-  border: 0; 
-  height: 2px; 
-  background-image: linear-gradient(to right, #f0f0f0, #3b13b0, #3b13b0,#f0f0f0);
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, #f0f0f0, #3b13b0, #3b13b0, #f0f0f0);
   margin-top: 10px;
   display: block;
   margin: 0 auto;
@@ -31,7 +31,7 @@ export const AdvantagesCards = styled.div`
 `;
 
 export const Card = styled.div`
-  width: 300px;
+  width: 280px;
   height: 400px;
   padding: 20px 40px;
   border-radius: 8px;
