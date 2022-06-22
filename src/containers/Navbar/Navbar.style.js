@@ -14,7 +14,6 @@ export const Wrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
   a {
     text-decoration: none;
   }
@@ -43,12 +42,10 @@ export const Logo = styled.h1`
   color: orange;
   display: flex;
   flex-direction: column;
-
   span {
     color: white;
     font-size: 14px;
   }
-
   ${mobile.lg} {
     font-size: 24px;
     text-align: center;
@@ -68,6 +65,10 @@ export const List = styled.li`
       transition: 0.3s ease;
     }
   }
+  ${mobile.lg} {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+  }
 `;
 
 export const MenuButton = styled.div`
@@ -80,6 +81,7 @@ export const MenuButton = styled.div`
     cursor: pointer;
   }
 `;
+
 export const Menu = styled.div`
   display: flex;
   flex-direction: row;
@@ -88,16 +90,13 @@ export const Menu = styled.div`
   ${mobile.lg} {
     display: ${({ navbarOpen }) => (navbarOpen ? `flex` : 'none')};
     flex-direction: column;
-    background-color: black;
-    opacity: 0.9;
+    background-color: ${colors.navbar};
+    text-align: center;
     width: 100%;
-    height: 100vh;
+    height: 94vh;
     position: absolute;
     right: 0;
     left: 0;
-    text-align: center;
-    gap: 30px;
-    font-size: 20px;
   }
 `;
 
@@ -105,7 +104,6 @@ export const NavbarButton = styled.span`
   color: white;
   font-size: 30px;
   display: none;
-
   ${mobile.lg} {
     display: block;
   }

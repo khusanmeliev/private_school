@@ -18,6 +18,10 @@ const Navbar = () => {
     prevScrollpos = currentScrollPos;
   };
 
+  const handleCloseNavbar = () => {
+    setNavbarOpen(false);
+  };
+
   return (
     <Wrapper ref={navbar}>
       <Logo>
@@ -29,22 +33,22 @@ const Navbar = () => {
             <AiOutlineMenu />
           </NavbarButton>
           <Menu navbarOpen={navbarOpen}>
-            <a href="#home">
+            <a href="#home" onClick={handleCloseNavbar}>
               <List>Bosh sahifa</List>
             </a>
-            <a href="#about">
+            <a href="#about" onClick={handleCloseNavbar}>
               <List>Biz haqimizda</List>
             </a>
-            <a href="#advantages">
+            <a href="#advantages" onClick={handleCloseNavbar}>
               <List>Bizning afzalliklarimiz</List>
             </a>
-            <a href="#lessons">
+            <a href="#lessons" onClick={handleCloseNavbar}>
               <List>Darslar</List>
             </a>
-            <a href="#directors">
+            <a href="#directors" onClick={handleCloseNavbar}>
               <List>Direktorlar</List>
             </a>
-            <a href="#contact">
+            <a href="#contact" onClick={handleCloseNavbar}>
               <List>Bog`lanish</List>
             </a>
           </Menu>
