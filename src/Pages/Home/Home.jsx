@@ -8,7 +8,7 @@ import { ImageLogo, Wrapper } from './Home.style';
 const Home = () => {
   return (
     <Wrapper id="home">
-      <Heading color="#d3d4de">
+      <Heading color="#d3d4de" size="lg">
         <span style={{ color: '#f8a408' }}>Elite Academic School </span>
         imkoniyatlar chegaralanmagan makon
       </Heading>
