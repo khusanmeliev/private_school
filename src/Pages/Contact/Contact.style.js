@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { mobile } from '../../assets/styles/sizes';
+import Button from '../../components/Button/Button';
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -85,4 +86,14 @@ export const Form = styled.form`
   textarea::placeholder {
     color: grey;
   }
+`;
+
+export const SButton = styled(Button)`
+  width: 100%;
+  height: 45px;
+  background-color: #fa9722;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  box-shadow: -1px 0px 13px -6px rgba(0, 0, 0, 0.75);
 `;
