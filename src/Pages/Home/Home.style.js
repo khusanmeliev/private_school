@@ -13,16 +13,23 @@ export const Wrapper = styled.div`
   height: 80vh;
   margin-top: 80px;
   padding: 20px 80px 80px 80px;
-  background-image: linear-gradient(rgba(5, 3, 24, 0.7), rgba(5, 3, 24, 0.7)), url(${background});
+  background-image: linear-gradient(rgba(5, 3, 24, 0.2), rgba(5, 3, 24, 0.2)), url(${background});
   background-size: cover;
   background-repeat: no-repeat;
 
   ${mobile.lg} {
     padding: 20px 20px 80px 20px;
-    background-image: linear-gradient(rgba(5, 3, 24, 0.7), rgba(5, 3, 24, 0.6)), url(${backgroundMobile});
+    background-image: linear-gradient(rgba(5, 3, 24, 0.2), rgba(5, 3, 24, 0.2)), url(${backgroundMobile});
   }
 `;
 
 export const ImageLogo = styled.img`
   width: 200px;
+`;
+
+export const HeadingBox = styled.div`
+  ${mobile.lg} {
+    padding: 10px;
+    background-color: rgba(5, 3, 24, 0.4);
+  }
 `;

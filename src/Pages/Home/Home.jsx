@@ -1,17 +1,20 @@
 import React from 'react';
 import Button from '../../components/Button/Button';
 import Heading from '../../components/Heading/Heading';
-import { ImageLogo, Wrapper } from './Home.style';
+import { HeadingBox, ImageLogo, Wrapper } from './Home.style';
 // import Text from '../../components/Text/Text';
 // import EliteLogo from '../../assets/img/ELITA.png';
 
 const Home = () => {
   return (
     <Wrapper id="home">
-      <Heading color="#d3d4de" size="lg">
-        <span style={{ color: '#f8a408' }}>Elite Academic School </span>
-        imkoniyatlar chegaralanmagan makon
-      </Heading>
+      <HeadingBox>
+        <Heading color="#fff" size="lg">
+          <span style={{ color: '#f8a408' }}>Elite Academic School </span>
+          imkoniyatlar chegaralanmagan makon
+        </Heading>
+      </HeadingBox>
+
       {/* <ImageLogo src={EliteLogo} alt="logo" />
       <Text size="lg" align="center" color="#d3d4de">
         Elite Academic School xususiy maktabi endigina o`z faoliyatini boshladi. Dastlabki yildanoq maktabda o`z
