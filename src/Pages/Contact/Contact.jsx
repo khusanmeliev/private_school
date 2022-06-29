@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import Heading from '../../components/Heading/Heading';
 import Text from '../../components/Text/Text';
 import { Logo } from '../../containers/Navbar/Navbar.style';
 import { Wrapper, Form, ContactBox, Left, Right, SButton } from './Contact.style';
 
 const Contact = () => {
-  const [values, setValues] = useState({ name: '', phoneNumber: '', comment: '' });
+  const initState = { full_name: '', phone_number: '', comment: '' };
+  const [values, setValues] = useState(initState);
+  // const [error, setError] = useState();
 
   const handleChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
@@ -13,7 +16,10 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(values);
+    axios.post('http://elite-school-register.herokuapp.com/contacts', values).then((res) => {
+      setValues(initState);
+    });
+    // .catch((err) => setError(err.response.data));
   };
 
   return (
@@ -29,12 +35,12 @@ const Contact = () => {
         <Right>
           <Form>
             <Text style={{ margin: '4px 0' }}>Ismingiz:</Text>
-            <input type="text" name="name" value={values.name} onChange={handleChange} placeholder="F.I.O" />
+            <input type="text" name="full_name" value={values.full_name} onChange={handleChange} placeholder="F.I.O" />
             <Text style={{ margin: '4px 0' }}>Telefon raqamingiz:</Text>
             <input
               type="number"
-              name="phoneNumber"
-              value={values.phoneNumber}
+              name="phone_number"
+              value={values.phone_number}
               onChange={handleChange}
               placeholder="90-000-00-00"
             />

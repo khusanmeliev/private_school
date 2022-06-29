@@ -97,6 +97,7 @@ export const Menu = styled.div`
     position: absolute;
     right: 0;
     left: 0;
+    
   }
 `;
 
