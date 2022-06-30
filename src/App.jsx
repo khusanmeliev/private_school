@@ -11,6 +11,8 @@ import Footer from './Pages/Footer/Footer';
 import Meals from './Pages/Meals/Meals';
 import Goals from './Pages/Goals/Goals';
 import Admin from './Pages/Dashboard/Admin';
+import Candidates from './Pages/Dashboard/containers/Candidates/Candidates';
+import Contacts from './Pages/Dashboard/containers/Contacts/Contacts';
 
 const Main = () => (
   <GlobalStyle>
@@ -35,7 +37,10 @@ const App = () => {
   return (
     <Routes>
       <Route exact path="/" element={<Main />} />
-      <Route path="admin" element={<Admin />} />
+      <Route path="admin" element={<Admin />}>
+        <Route path="candidates" element={<Candidates />} />
+        <Route path="contacts" element={<Contacts />} />
+      </Route>
     </Routes>
   );
 };

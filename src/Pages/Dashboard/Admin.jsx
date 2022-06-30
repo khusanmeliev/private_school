@@ -1,48 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Table, Wrapper } from './Admin.style';
-import Heading from '../../components/Heading/Heading';
-import eliteRegisterApi from '../../api/api';
+import { Outlet } from 'react-router-dom';
+import { Wrapper } from './Admin.style';
+import Sidebar from './containers/Sidebar/Sidebar';
 
 const Admin = () => {
-  const [candidates, setCandidates] = useState();
-
-  useEffect(() => {
-    eliteRegisterApi.get('/candidates').then((res) => setCandidates(res.data));
-  }, []);
-
-  if (!candidates) return <h1>Yuklanayapti...</h1>;
-
   return (
     <Wrapper>
-      <Heading color="grey">Ro`yxatdan o`tganlar</Heading>
-      <Table>
-        <thead>
-          <tr>
-            <th>№</th>
-            <th>F.I.O</th>
-            <th>Sinf</th>
-            <th>Manzil</th>
-            <th>Telefon raqam</th>
-            <th>Otasi</th>
-            <th>Onasi</th>
-            <th>To`lov turi</th>
-          </tr>
-        </thead>
-        <tbody>
-          {candidates.map((candidate, index) => (
-            <tr key={candidate.id}>
-              <td>{index + 1}</td>
-              <td>{candidate.full_name}</td>
-              <td>{candidate.grade}</td>
-              <td>{candidate.address}</td>
-              <td>{candidate.phone_number}</td>
-              <td>{candidate.job_of_father}</td>
-              <td>{candidate.job_of_mother}</td>
-              <td>{candidate.payment_mode}</td>
-            </tr>
-          ))}
-        </tbody>
-      </Table>
+      <Sidebar />
+      <Outlet />
     </Wrapper>
   );
 };
