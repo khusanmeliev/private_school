@@ -38,6 +38,7 @@ const App = () => {
     <Routes>
       <Route exact path="/" element={<Main />} />
       <Route path="admin" element={<Admin />}>
+        <Route index element={<Candidates />} />
         <Route path="candidates" element={<Candidates />} />
         <Route path="contacts" element={<Contacts />} />
       </Route>

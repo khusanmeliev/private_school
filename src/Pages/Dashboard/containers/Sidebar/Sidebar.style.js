@@ -4,7 +4,7 @@ import { colors } from '../../../../assets/styles/colors';
 
 export const Wrapper = styled.div`
   width: fit-content;
-  height: 100%;
+  height: 100vh;
   background-color: ${colors.grey};
   position: relative;
   box-sizing: border-box;
