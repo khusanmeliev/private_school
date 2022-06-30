@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const ELITE_REGISTER = 'http://elite-school-register.herokuapp.com';
+const ELITE_REGISTER = 'https://elite-school-register.herokuapp.com';
 
 const eliteRegisterApi = axios.create({
   baseURL: ELITE_REGISTER,
