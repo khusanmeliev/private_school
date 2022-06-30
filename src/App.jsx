@@ -35,7 +35,7 @@ const App = () => {
   return (
     <Routes>
       <Route exact path="/" element={<Main />} />
-      <Route path="/admin" element={<Admin />} />
+      <Route path="admin" element={<Admin />} />
     </Routes>
   );
 };

@@ -9,7 +9,7 @@ const Footer = () => {
     <Wrapper>
       <Flexbox alignItems="start">
         <Text color="white" style={{ margin: '4px 0' }}>
-          +998 (55)-705-66-16
+          +998 (95)-411-45-45
         </Text>
         <Text style={{ color: 'white', margin: '4px 0' }}>admin@elitemaktab.uz</Text>
       </Flexbox>
