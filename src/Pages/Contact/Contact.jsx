@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import eliteRegisterApi from '../../api/api';
 import Heading from '../../components/Heading/Heading';
 import Text from '../../components/Text/Text';
 import { Logo } from '../../containers/Navbar/Navbar.style';
@@ -16,7 +16,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://elite-school-register.herokuapp.com/contacts', values).then((res) => {
+    eliteRegisterApi.post('/contacts', values).then((res) => {
       setValues(initState);
     });
     // .catch((err) => setError(err.response.data));

@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Table, Wrapper } from './Admin.style';
-import axios from 'axios';
 import Heading from '../../components/Heading/Heading';
+import eliteRegisterApi from '../../api/api';
 
 const Admin = () => {
   const [candidates, setCandidates] = useState();
 
   useEffect(() => {
-    axios.get('http://elite-school-register.herokuapp.com/candidates').then((res) => setCandidates(res.data));
+    eliteRegisterApi.get('/candidates').then((res) => setCandidates(res.data));
   }, []);
 
   if (!candidates) return <h1>Yuklanayapti...</h1>;
