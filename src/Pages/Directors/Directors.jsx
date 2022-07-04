@@ -10,7 +10,7 @@ import { FaPhone, FaMapMarkerAlt, FaFacebookF, FaTelegramPlane, FaInstagram } fr
 const Directors = () => {
   return (
     <Wrapper id="directors">
-      <Heading size="lg">Maktabimiz direktorlari haqida ma`lumot!</Heading>
+      <Heading size="lg">Maktabimiz xodimlari haqida ma`lumot!</Heading>
       {directors.map((director) => (
         <Card key={director.id}>
           <CardImage src={director.img} alt="" />
@@ -35,15 +35,15 @@ const Directors = () => {
             </div>
             <div>
               <Flexbox flexDirection="row" gap="10px" height="100px" justifyContent="flex-start">
-                <Icon href="" target="_blank" rel="noreferrer">
+                {/* <Icon href="" target="_blank" rel="noreferrer">
                   <FaFacebookF />
-                </Icon>
+                </Icon> */}
                 <Icon href={`https://t.me/${director.contacts.telegram}`} target="_blank" rel="noreferrer">
                   <FaTelegramPlane />
                 </Icon>
-                <Icon href="" target="_blank" rel="noreferrer">
+                {/* <Icon href="" target="_blank" rel="noreferrer">
                   <FaInstagram />
-                </Icon>
+                </Icon> */}
               </Flexbox>
             </div>
           </CardDetails>

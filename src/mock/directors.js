@@ -1,5 +1,6 @@
 import MarufIsoqulov from '../assets/img/maruf_isoqulov.jpg';
 import MahmudGaffarov from '../assets/img/mahmud_gaffarov.jpg';
+import DilfuzaBerdiyeva from '../assets/img/dilfuza_berdiyeva.jpg';
 
 export const directors = [
   {
@@ -24,6 +25,18 @@ export const directors = [
       email: 'm.isoqulov@mail.ru',
       phone: '+998(99)-333-66-16',
       telegram: 'RMUZHEAD',
+    },
+  },
+  {
+    id: 3,
+    img: DilfuzaBerdiyeva,
+    role: 'Boshlang`ich sinf o`qituvchisi',
+    name: 'Berdiyeva Dilfuza',
+    address: 'Samarqand viloyati, Urgut tumani',
+    contacts: {
+      email: 'diliberdieva1555@gmail.com',
+      phone: '+998(90)-194-15-55',
+      telegram: '',
     },
   },
 ];
