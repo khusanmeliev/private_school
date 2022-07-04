@@ -19,6 +19,7 @@ const Directors = () => {
               {director.role}
             </Heading>
             <Heading style={{ margin: 0 }}>{director.name}</Heading>
+            {director.about && <Text style={{ margin: '10 0 0 0' }}>({director.about})</Text>}
             <div>
               <Flexbox flexDirection="row" gap="10px" justifyContent="flex-start">
                 <MdEmail />
@@ -33,19 +34,19 @@ const Directors = () => {
                 <Text>{director.address}</Text>
               </Flexbox>
             </div>
-            <div>
-              <Flexbox flexDirection="row" gap="10px" height="100px" justifyContent="flex-start">
-                {/* <Icon href="" target="_blank" rel="noreferrer">
+            <Flexbox flexDirection="row" gap="10px" height="40px" justifyContent="flex-start">
+              {/* <Icon href="" target="_blank" rel="noreferrer">
                   <FaFacebookF />
                 </Icon> */}
+              {director.contacts.telegram && (
                 <Icon href={`https://t.me/${director.contacts.telegram}`} target="_blank" rel="noreferrer">
                   <FaTelegramPlane />
                 </Icon>
-                {/* <Icon href="" target="_blank" rel="noreferrer">
+              )}
+              {/* <Icon href="" target="_blank" rel="noreferrer">
                   <FaInstagram />
                 </Icon> */}
-              </Flexbox>
-            </div>
+            </Flexbox>
           </CardDetails>
         </Card>
       ))}
