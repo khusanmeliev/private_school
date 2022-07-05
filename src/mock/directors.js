@@ -1,6 +1,7 @@
 import MarufIsoqulov from '../assets/img/maruf_isoqulov.jpg';
 import MahmudGaffarov from '../assets/img/mahmud_gaffarov.jpg';
 import DilfuzaBerdiyeva from '../assets/img/dilfuza_berdiyeva.jpg';
+import UmidjonKasimov from '../assets/img/umidjon_kasimov.jpg';
 
 export const directors = [
   {
@@ -37,6 +38,18 @@ export const directors = [
     contacts: {
       email: 'diliberdieva1555@gmail.com',
       phone: '+998(90)-194-15-55',
+    },
+  },
+  {
+    id: 4,
+    img: UmidjonKasimov,
+    role: 'Boshlang`ich sinf o`qituvchisi',
+    name: 'Umidjon Kasimov',
+    address: 'Samarqand viloyati, Urgut tumani',
+    about: '21 yillik ish tajribasi',
+    contacts: {
+      email: 'umidjonkasimov79@gmail.com',
+      phone: '+998(91)-555-10-66',
     },
   },
 ];
