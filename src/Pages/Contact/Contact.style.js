@@ -57,30 +57,40 @@ export const Right = styled.div`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   box-sizing: border-box;
 
   input {
     font-size: 14px;
     text-indent: 6px;
     border: none;
-    border: 1px solid grey;
     border-radius: 4px;
     outline: none;
     height: 40px;
     font-family: 'Roboto Slab', serif;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    &::-webkit-outer-spin-button,
+    ::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+    &:focus {
+      border: 1px solid #ffa500;
+    }
   }
 
   textarea {
     height: 120px;
     border: none;
     border-radius: 4px;
-    border: 1px solid grey;
     text-indent: 6px;
     font-size: 14px;
     resize: none;
     outline: none;
     font-family: 'Roboto Slab', serif;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    &:focus {
+      border: 1px solid #ffa500;
+    }
   }
 
   textarea::placeholder {
@@ -91,9 +101,13 @@ export const Form = styled.form`
 export const SButton = styled(Button)`
   width: 100%;
   height: 45px;
-  background-color: #fa9722;
+  background-color: #fa9900;
   font-size: 20px;
   font-weight: bold;
   margin-top: 25px;
   box-shadow: -1px 0px 13px -6px rgba(0, 0, 0, 0.75);
+  &:hover {
+    background-color: #fa9722;
+    transition: 0.2s;
+  }
 `;
