@@ -34,7 +34,7 @@ export const directors = [
     role: 'Boshlang`ich sinf o`qituvchisi',
     name: 'Berdiyeva Dilfuza',
     address: 'Samarqand viloyati, Urgut tumani',
-    about: '20 yillik ish tajribasi',
+    about: '30 yillik ish tajribasi',
     contacts: {
       email: 'diliberdieva1555@gmail.com',
       phone: '+998(90)-194-15-55',
